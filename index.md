@@ -13,19 +13,15 @@ header:
   #actions:
   #  - label: label to be added!
   #    url: people#join-us
-  caption: Clear Water Bay, Hong Kong, 2024, W Song
-excerpt: Bioinformatics, Phylogenomics, Microbial Ecology, Animal-Microbe Symbioses
+  caption: HKUST
+excerpt: Bioinformatics, Database Construction, Marine Evolution and Epigenetics
 ---
 
 ### About me
 
-I hold a Master degree on Marine Microbiology and a PhD degree on Microbiology and Immunology (University of New South Wales (**UNSW**), Sydney, Australia). 
-After my graduation, I continued my research as a Postdoctoral Fellow at **UNSW** (2019-2022) and received a Seed Grant for Early Career Researchers from the university.
-In early 2023, I relocated to The Chinese University of Hong Kong (**CUHK**) to expand my knowledge on Phylogenomics. 
-Later the same year, I joined The Hong Kong University of Science and Technology (**HKUST**) as a Research Assistant Professor to continue my research on Bioinformatics and animal-microbe symbioses.
+I hold a PhD degree on Bioinformatics (China Agricultural University, Beijing, China, 2015-2020). And then, i continued to be a Postdoctoral Researcher at Shenzhen Second People's Hospital (2020-2023) and received a Grant from the Science and Technology Innovation Committee of Shenzhen. Now, i'm a joint Postdoctoral Researcher (GML Supervisor: Prof. Pei-yuan Qian, HKUST Supervisor: Prof. Longjun Wu) from Joint Postdoctoral Training Program launched by GML and HKB.
 
-Interested in bioinformatics, phylogenomics or animal-microbe symbioses? Shoot me an email to explore possibilities!
-
+Outside of my academic life, i'm interested in traveling and sports, like badminton, table tennis, hiking. Now, i'm learning to play tennis and continue swimming. 
 
 ### Links
 
