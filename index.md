@@ -29,3 +29,4 @@ Outside of my academic life, i'm interested in **traveling and sports**, like ba
 + [Google Scholar](https://scholar.google.com.hk/citations?user=I4Rl5BMAAAAJ)
 + [Github](https://github.com/jackieyihkb)
 + [Researchgate](https://www.researchgate.net/profile/Jiajie-She)
++ [Scopus](https://www.scopus.com/authid/detail.uri?authorId=56545171200)
