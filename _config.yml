@@ -8,10 +8,10 @@ plugins:
   - jemoji
   - jekyll-include-cache
 
-title: Dr Weizhi Song
-subtitle: Research Assistant Professor, HKUST
+title: Dr SHE Jiajie
+subtitle: Joint Postdoctoral Researcher, HKUST
 description: to be added
-url: https://songweizhi.github.io/
+url: https://orcid.org/0000-0003-4286-6411
 locale: en-US
 
 defaults:
