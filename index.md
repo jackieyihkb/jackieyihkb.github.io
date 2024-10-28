@@ -9,7 +9,7 @@ classes:
 header:
   overlay_color: '#000'
   overlay_filter: 0.33
-  overlay_image: /assets/photos/main2.jpg
+  overlay_image: /assets/photos/main3.jpg
   #actions:
   #  - label: label to be added!
   #    url: people#join-us
