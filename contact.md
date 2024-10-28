@@ -1,6 +1,6 @@
 ---
-title: Contact
+title: Contact me
 ---
 
-+ Email: songwz03@gmail.com
-+ Office: Room 3641 (LIFT 31-32), Academic Building, The Hong Kong University of Science and Technology, Clear Water Bay, Kowloon, Hong Kong
++ Email: jackieyihkb@ust.hk
++ Office: The Hong Kong University of Science and Technology, Hong Kong Branch (HKB), Department of Ocean Science, Clear Water Bay, Kowloon, Room 3641 (LIFT 31-32), Hong Kong
