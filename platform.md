@@ -3,12 +3,14 @@ title: Software
 main:
 
   - title: DeepSeaDB
+    image_path: assets/images/software/DeepSeaDB.jpg
     url: http://143.89.25.9/DeepSeaDB/
     btn_label: "Learn More"
     btn_class: "btn--info"
     excerpt: The deep sea is the largest habitat on earth, which covers 71% of the world's surface and is largely unexplored yet. [**DeepSeaDB**](http://143.89.25.9/DeepSeaDB/) is the most comprehensive genomic DataBase specifically for Deep-Sea species. It integrated vast genomic resources and offered functional support toolkits for multi-dimensional analysis. 
 
   - title: TomAP
+    image_path: assets/images/software/TomAP.jpg
     url: http://bioinformatics.cau.edu.cn/TomAP/
     btn_label: "Learn More"
     btn_class: "btn--info"
@@ -16,6 +18,7 @@ main:
       
 
   - title: HpeNet
+    image_path: assets/images/software/HpeNet.jpg
     url: https://bioinformatics.cau.edu.cn/HpeNet/
     btn_label: "Learn More"
     btn_class: "btn--info"
@@ -23,6 +26,7 @@ main:
   
 
   - title: croFGD
+    image_path: assets/images/software/croFGD.jpg
     url: http://bioinformatics.cau.edu.cn/croFGD/
     btn_label: "Learn More"
     btn_class: "btn--info"
@@ -30,6 +34,7 @@ main:
     
 
   - title: PNRD maintenance and update
+    image_path: assets/images/software/PNRD.jpg
     url: http://structuralbiology.cau.edu.cn/PNRD/
     btn_label: "Learn More"
     btn_class: "btn--info"
