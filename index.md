@@ -14,7 +14,7 @@ header:
   #  - label: label to be added!
   #    url: people#join-us
   caption: HKUST
-excerpt: Bioinformatics, Database Construction, Marine Evolution and Epigenetics
+excerpt: Bioinformatics, Database Construction, Deep-Sea Evolution and Epigenetics
 ---
 
 ### About me
