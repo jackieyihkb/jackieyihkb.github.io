@@ -3,10 +3,10 @@ main:
     url: research
   - title: Publications
     url: publications
-  - title: Software
-    url: software
-  - title: Teaching
-    url: teaching
+  - title: Platform
+    url: platform
+  - title: Patents
+    url: patents
   - title: Photos
     url: photos
   - title: Contact
