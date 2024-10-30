@@ -4,17 +4,20 @@ title: Research Experiences
 
 ## Bioinformatics platform construction
 
-- **DeepSeaDB: An integrated genomic DataBase for Deep-Sea species** (Feb. 2023 - Now)
+- **DeepSeaDB: An integrated genomic DataBase for Deep-Sea species**
 
    - The deep sea is the largest habitat on earth, which covers 71% of the world's surface and is largely unexplored yet. [**DeepSeaDB**](http://143.89.25.9/DeepSeaDB/) is the most comprehensive genomic DataBase specifically for Deep-Sea species. It integrated vast genomic resources and offered functional support toolkits for multi-dimensional analysis. DeepSeaDB will be a comprehensive one-stop genomic platform for Deep-sea researchers, by providing support for conducting comprehensive investigations on the continuously expanding deep-sea genomic data and thus promote Deep-sea research on the diversity and adaptability.
 
-- **Tomato multi-omics data analysis platform** (Aug. 2016 - Oct. 2019)
+- **Tomato multi-omics data analysis platform**
    - Tomato (Solanum lycopersicum), the second most important vegetable crop in the world, is also an important model plant for the study of fruit ripening and disease resistance. However, the function of tomato genes remains largely unknown. We integrated multi-omics data to offer invaluable insights into the intricate web of biological interactions and presented the Tomato multi-omics data Analysis Platform, [**TomAP**](http://bioinformatics.cau.edu.cn/TomAP/) ([Cao, **She** et al., 2024](https://doi.org/10.1016/j.ncrops.2023.10.001)). The co-expression network and the defined chromatin states open up a realm of possibilities, not only for investigating the commonalities and variations among co-expressed genes in the context of chromatin states but also for comparative functional assessments of orthologs across species. 
 
--  **Catharanthus roseus Functional Genomics Database** (Jun. 2017 - Jun. 2019)
+- **HpeNet: Co-expression Network Database for de novo Transcriptome Assembly of Paeonia lactiflora Pall**
+Paeonia lactiflora Pall., commonly known as the herbaceous peony, is an ornamental flowering plant known around the world. Its oil contains a high proportion of polyunsaturated fatty acids (PUFAs). We produced 40 in-house RNA-seq datasets from 10 different tissues and performed de novo transcriptome assembly to obtain a complete transcriptome. Moreover,we had constructed the co-expression network database, [**HpeNet**](https://bioinformatics.cau.edu.cn/HpeNet/) ([Sheng, **She** et al., 2020](https://doi.org/10.3389/fgene.2020.570138)), which contains transcriptome data, gene information, the co-expression network, and so forth. Furthermore some analytical tools, such as blast, gene expression profiling analysis and gene set enrichment analysis (GSEA), were supported for network analysis and functional annotation.
+
+-  **Catharanthus roseus Functional Genomics Database**
    - Catharanthus roseus (L.) G. Don, a medicinal plant, produces monoterpene indole alkaloids (MIAs) derived from secologanin and tryptamine. Based on transcriptomic data sets, we constructed co-expression network and performed further analysis, such as network search, network comparison and network analysis. The information of gene family, KEGG pathway, GO terms and miRNA was integrated into [**croFGD**](http://bioinformatics.cau.edu.cn/croFGD/) database ([**She** et al., 2019](https://doi.org/10.3389/fgene.2019.00238)).
 
--  **Maintenance and upgrading of Plant Non-coding RNA Database** (Nov. 2015 - Jun. 2020)
+-  **Maintenance and upgrading of Plant Non-coding RNA Database**
    - Based on the [**PNRD**](http://structuralbiology.cau.edu.cn/PNRD/) database ([Yi et al., 2014](https://doi.org/10.1093/nar/gku1162)), we collected a total of 924,127 entries of 14 different types of ncRNAs from 221 plant species. Targets of miRNAs were extended to 900,771 pairs in 57 species, and the number of miRNA expression profiles reached 142 in 47 species.
  
 ## Deep-sea evolution and metabolic interaction between host and symbionts 
