@@ -7,7 +7,7 @@ main:
     url: http://143.89.25.9/DeepSeaDB/
     btn_label: "Learn More"
     btn_class: "btn--info"
-    excerpt: The deep sea is the largest habitat on earth, which covers 71% of the world's surface and is largely unexplored yet. [**DeepSeaDB**](http://143.89.25.9/DeepSeaDB/) is the most comprehensive genomic DataBase specifically for Deep-Sea species. It integrated vast genomic resources and offered functional support toolkits for multi-dimensional analysis. 
+    excerpt: The deep sea is the largest habitat on earth, which covers 71% of the world's surface and is largely unexplored yet. DeepSeaDB is the most comprehensive genomic DataBase specifically for Deep-Sea species. It integrated vast genomic resources and offered functional support toolkits for multi-dimensional analysis. 
 
   - title: TomAP
     image_path: assets/images/software/TomAP.jpg
