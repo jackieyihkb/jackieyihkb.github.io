@@ -1,8 +1,11 @@
 ---
-title: Research Activities
+title: Research Projects
 ---
 
-## Bioinformatics and Metagenomics
+## Bioinformatics platform construction
+
+- DeepSeaDB: An integrated genomic DataBase for Deep-Sea species     Feb. 2023 - Now
+- - The deep sea is the largest habitat on earth, which covers 71% of the world's surface and is largely unexplored yet. **DeepSeaDB** is the most comprehensive genomic DataBase specifically for Deep-Sea species. It integrated vast genomic resources and offered functional support toolkits for multi-dimensional analysis. DeepSeaDB will be a comprehensive one-stop genomic platform for Deep-sea researchers, by providing support for conducting comprehensive investigations on the continuously expanding deep-sea genomic data and thus promote Deep-sea research on the diversity and adaptability.
 
 High-throughput sequencing provides a powerful way to study the ‘unexplored’ and uncultured diversity of microbial communities. My research involves the development of new computational algorithms and pipelines 1) for the processing of sequencing data from new sequencing strategy, including PacBio long read sequencing ([**Song** et al., 2019](https://doi.org/10.1016/j.margen.2019.05.002)) and the recently released Nanopore’s adaptive sampling technology; 2) to improve the quality of metagenome-assembled genomes ([**Song** and Thomas, 2017](https://doi.org/10.1093/bioinformatics/btx086); 3) to link MAGs with their often-missing 16S rRNA gene sequences that are commonly used in phylogenetic analysis and environmental surveys ([**Song** et al., 2022](https://doi.org/10.1093/bioinformatics/btac398)).
 
