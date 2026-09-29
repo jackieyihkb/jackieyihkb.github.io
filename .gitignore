@@ -1,1 +1,19 @@
+# macOS / Windows junk that must never be published
+.DS_Store
+.DS_Store?
+._*
+Thumbs.db
+desktop.ini
+
+# editor / IDE
 .idea
+.vscode
+*.swp
+
+# build output and local drafts
+_site
+.sass-cache
+.jekyll-cache
+.jekyll-metadata
+Gemfile.lock
+vendor

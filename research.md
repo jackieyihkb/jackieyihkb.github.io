@@ -1,30 +1,99 @@
 ---
-title: Research Experiences
+title: Research
+classes:
+  - wide
+  - fullwidth
+  - page-research
 ---
 
-## Bioinformatics platform construction
+My research is about turning sequencing data into resources that other people can
+use. I work on **deep-ocean multi-omics**, on **plant functional genomics
+databases**, and on **epitranscriptomics in reproductive disease** &mdash; three
+areas that look unrelated until you notice that all of them are really about
+integrating heterogeneous data and making it queryable.
 
-- **DeepSeaDB: An integrated genomic DataBase for Deep-Sea species**
+## Deep-ocean multi-omics
 
-   - The deep sea is the largest habitat on earth, which covers 71% of the world's surface and is largely unexplored yet. [**DeepSeaDB**](http://143.89.25.9/DeepSeaDB/) is the most comprehensive genomic DataBase specifically for Deep-Sea species. It integrated vast genomic resources and offered functional support toolkits for multi-dimensional analysis. DeepSeaDB will be a comprehensive one-stop genomic platform for Deep-sea researchers, by providing support for conducting comprehensive investigations on the continuously expanding deep-sea genomic data and thus promote Deep-sea research on the diversity and adaptability.
+### DOO &mdash; Deep Ocean Omics
 
-- **Tomato multi-omics data analysis platform**
-   - Tomato (Solanum lycopersicum), the second most important vegetable crop in the world, is also an important model plant for the study of fruit ripening and disease resistance. However, the function of tomato genes remains largely unknown. We integrated multi-omics data to offer invaluable insights into the intricate web of biological interactions and presented the Tomato multi-omics data Analysis Platform, [**TomAP**](http://bioinformatics.cau.edu.cn/TomAP/) ([Cao, **She** et al., 2024](https://doi.org/10.1016/j.ncrops.2023.10.001)). The co-expression network and the defined chromatin states open up a realm of possibilities, not only for investigating the commonalities and variations among co-expressed genes in the context of chromatin states but also for comparative functional assessments of orthologs across species. 
+The deep ocean covers most of the planet and is still largely unexplored. In the
+past few years, omics data from deep-sea organisms have grown fast, but they were
+scattered across hundreds of supplementary tables and one-off repositories. With
+Prof. Pei-Yuan Qian and Prof. Longjun Wu we built **DOO**, a centralised
+multi-omics atlas for deep-ocean organisms
+([**She** et al., 2026](https://doi.org/10.1093/nar/gkaf1096);
+[Nucleic Acids Research](https://doi.org/10.1093/nar/gkaf1096) Database Issue).
 
-- **HpeNet: Co-expression Network Database for de novo Transcriptome Assembly of Paeonia lactiflora Pall**
-Paeonia lactiflora Pall., commonly known as the herbaceous peony, is an ornamental flowering plant known around the world. Its oil contains a high proportion of polyunsaturated fatty acids (PUFAs). We produced 40 in-house RNA-seq datasets from 10 different tissues and performed de novo transcriptome assembly to obtain a complete transcriptome. Moreover,we had constructed the co-expression network database, [**HpeNet**](https://bioinformatics.cau.edu.cn/HpeNet/) ([Sheng, **She** et al., 2020](https://doi.org/10.3389/fgene.2020.570138)), which contains transcriptome data, gene information, the co-expression network, and so forth. Furthermore some analytical tools, such as blast, gene expression profiling analysis and gene set enrichment analysis (GSEA), were supported for network analysis and functional annotation.
+DOO currently integrates **68 species across seven phyla and 16 classes**:
+72 genomes, 950 bulk transcriptomes, 15 single-cell transcriptomes and 1,112
+metagenomes, together with analysis toolkits. For every genome it exposes
+assembly statistics, phylogeny, gene annotation, BUSCO completeness, transcription
+factors and ubiquitin-family genes, gene clusters, symbiont and mitochondrial
+genomes, and fossil records.
 
--  **Catharanthus roseus Functional Genomics Database**
-   - Catharanthus roseus (L.) G. Don, a medicinal plant, produces monoterpene indole alkaloids (MIAs) derived from secologanin and tryptamine. Based on transcriptomic data sets, we constructed co-expression network and performed further analysis, such as network search, network comparison and network analysis. The information of gene family, KEGG pathway, GO terms and miRNA was integrated into [**croFGD**](http://bioinformatics.cau.edu.cn/croFGD/) database ([**She** et al., 2019](https://doi.org/10.3389/fgene.2019.00238)).
+**Browse it:** [DeepOceanOmics.org](https://DeepOceanOmics.org)
 
--  **Maintenance and upgrading of Plant Non-coding RNA Database**
-   - Based on the [**PNRD**](http://structuralbiology.cau.edu.cn/PNRD/) database ([Yi et al., 2014](https://doi.org/10.1093/nar/gku1162)), we collected a total of 924,127 entries of 14 different types of ncRNAs from 221 plant species. Targets of miRNAs were extended to 900,771 pairs in 57 species, and the number of miRNA expression profiles reached 142 in 47 species.
- 
-## Deep-sea evolution and metabolic interaction between host and symbionts 
--  Prior studies on specific adaptation to the hostile deep-sea conditions has predominantly centered on selected deep-sea species or mitochondrial genomes. However, there has yet to be a systematic investigation of distinctive adaptations across a wide range of deep-sea species based on available genomes. Phylogenetic analysis for deep-sea and shallow-water species showed that these deep-sea species diverged more than 300 million years ago. Positive selection genes (PSGs) including heat shock proteins (HSPs), transporter protein (ABC transporter, amino acid transporter), transmembrane pattern-recognition receptor (PRR), were beneficial for deep-sea organisms to obtain their symbionts from the environment.
+### Deep-sea adaptation and host&ndash;symbiont evolution
 
-## Epitranscriptomic in reproductive diseases and deep-sea organisms
--  We performed high-throughput sequencing in villous tissues from spontaneous abortion (SA group) and controls with induced abortion (normal group) in the first trimester, and mapped the profiles of m6A modification in human villi with early spontaneous abortion. Based on the conjoint analysis of meRIP-seq and RNA-seq data, we identified key candidate genes involved in early spontaneous abortion. Finally, we explored the mechanism through focusing on the key gene IGFBP3 (insulin-like growth factor binding protein) and C/EBPβ (endometrial receptivity marker) ([**She** et al., 2020](https://doi.org/10.3389/fgene.2022.861853)). 
+Earlier work in this area looked at adaptation across many deep-sea lineages
+rather than one species at a time. Phylogenetic analysis of deep-sea and
+shallow-water species put their divergence more than 300 million years ago, and
+positive-selection scans pointed at heat-shock proteins, transporter proteins
+(ABC and amino-acid transporters) and transmembrane pattern-recognition receptors
+as the genes that helped deep-sea organisms recognise and acquire their symbionts
+from the surrounding environment.
 
-## Machine learning application in the diagnosis of Endometriosis
-- Combining with random forest and artificial neural network, we identified seven important differentially expressed genes (DEGs) for the diagnosis of Endometriosis and verified its diagnostic efficacy in public datasets. The diagnostic model can provide novel sights into the understanding of the pathogenesis of EMs and contribute to the clinical diagnosis and treatment of EMs ([**She** et al., 2020](https://doi.org/10.3389/fgene.2022.848116)).
+## Plant functional genomics databases
+
+Crop and medicinal-plant genomics was where I started, and the databases from that
+period are still online and still used.
+
+- **TomAP &mdash; tomato multi-omics analysis platform.** Tomato is the second most
+  important vegetable crop worldwide and a model for fruit ripening and disease
+  resistance, yet the function of most of its genes is unknown. TomAP integrates
+  co-expression networks with defined chromatin states so that co-expressed genes
+  can be examined together with the chromatin context, and orthologues compared
+  across species
+  ([Cao, **She** et al., 2024](https://doi.org/10.1016/j.ncrops.2023.10.001)).
+  [Launch TomAP](http://bioinformatics.cau.edu.cn/TomAP/)
+
+- **HpeNet &mdash; herbaceous peony co-expression network.** We produced 40 in-house
+  RNA-seq datasets from 10 tissues and assembled the transcriptome *de novo*, then
+  built a co-expression network database with BLAST, expression profiling and GSEA
+  support
+  ([Sheng, **She** et al., 2020](https://doi.org/10.3389/fgene.2020.570138)).
+  [Launch HpeNet](https://bioinformatics.cau.edu.cn/HpeNet/)
+
+- **croFGD &mdash; *Catharanthus roseus* functional genomics database.** *C. roseus*
+  produces monoterpene indole alkaloids derived from secologanin and tryptamine.
+  Starting from transcriptomic datasets we built a co-expression network and added
+  network search, comparison and analysis, plus gene-family, KEGG, GO and miRNA
+  annotation ([**She** et al., 2019](https://doi.org/10.3389/fgene.2019.00238)).
+  [Launch croFGD](http://bioinformatics.cau.edu.cn/croFGD/)
+
+- **PNRD &mdash; plant non-coding RNA database, maintenance and upgrade.** Building
+  on [PNRD](http://structuralbiology.cau.edu.cn/PNRD/)
+  ([Yi et al., 2014](https://doi.org/10.1093/nar/gku1162)), we collected
+  **924,127 entries** of 14 ncRNA types from **221 plant species**, extended miRNA
+  target predictions to **900,771 pairs** in 57 species, and grew the number of
+  miRNA expression profiles to **142** across 47 species.
+
+## Epitranscriptomics in reproductive disease
+
+### m⁶A modification in early pregnancy loss
+
+We performed high-throughput sequencing of villous tissue from first-trimester
+spontaneous abortions and from induced-abortion controls, and mapped the
+transcriptome-wide m⁶A profile of human villi in early spontaneous abortion.
+Joint analysis of MeRIP-seq and RNA-seq data identified candidate genes involved
+in the process; we followed up the mechanism through *IGFBP3* (insulin-like growth
+factor binding protein) and C/EBP&beta;, a marker of endometrial receptivity
+([**She** et al., 2022](https://doi.org/10.3389/fgene.2022.861853)).
+
+### Machine learning for endometriosis diagnosis
+
+Endometriosis is commonly diagnosed late. Combining a random forest with an
+artificial neural network, we identified seven differentially expressed genes that
+carry diagnostic signal, then validated the model on public datasets
+([**She** et al., 2022](https://doi.org/10.3389/fgene.2022.848116)). The model is
+a step towards a molecular test that could shorten the diagnostic delay.

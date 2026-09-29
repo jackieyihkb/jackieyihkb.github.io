@@ -1,6 +1,11 @@
-# configuration
+# ---------------------------------------------------------------------------
+#  Site configuration  ·  https://jackieyihkb.github.io
+# ---------------------------------------------------------------------------
+
+# Theme ---------------------------------------------------------------------
 remote_theme: mmistakes/minimal-mistakes@4.20.1
 minimal_mistakes_skin: default
+
 plugins:
   - jekyll-paginate
   - jekyll-sitemap
@@ -8,12 +13,91 @@ plugins:
   - jemoji
   - jekyll-include-cache
 
-title: Dr SHE Jiajie
-subtitle: Joint Postdoctoral Researcher, HKB & GML
-description: to be added
-url: https://orcid.org/0000-0003-4286-6411
+# Site identity -------------------------------------------------------------
+# NOTE: `url` must be the real site address. It is used for the canonical link,
+# og:url, the sitemap and the schema.org block, so a wrong value here silently
+# breaks every one of those.
+title: Jiajie She
+subtitle: Lecturer · Bioinformatics & Deep-Sea Multi-Omics
+name: Jiajie She
+description: >-
+  Jiajie She (佘加杰) is a Lecturer at the School of Food and Drug, Shenzhen
+  Polytechnic University. He works on bioinformatics, deep-sea genomics and the
+  construction of multi-omics databases such as Deep Ocean Omics (DOO) and TomAP.
+
+url: https://jackieyihkb.github.io
+baseurl: ""
+repository: jackieyihkb/jackieyihkb.github.io
 locale: en-US
 
+# Image used for link previews when a page has no hero image of its own.
+og_image: /assets/images/social-card.png
+
+# Author --------------------------------------------------------------------
+# Drives the sidebar profile card, the footer icons and the schema.org Person
+# block. `avatar` must point at a real file or the card renders without a photo.
+author:
+  name: Jiajie She
+  bio: >-
+    Lecturer at the School of Food and Drug, Shenzhen Polytechnic University.
+    Bioinformatics · deep-sea omics · multi-omics database construction.
+  avatar: /assets/images/bio-photo.jpg
+  location: Shenzhen, China
+  email: jiajie@szpu.edu.cn
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:jiajie@szpu.edu.cn"
+    - label: "ORCID"
+      icon: "ai ai-fw ai-orcid"
+      url: "https://orcid.org/0000-0003-4286-6411"
+    - label: "Google Scholar"
+      icon: "ai ai-fw ai-google-scholar"
+      url: "https://scholar.google.com.hk/citations?user=I4Rl5BMAAAAJ"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/jackieyihkb"
+    - label: "ResearchGate"
+      icon: "ai ai-fw ai-researchgate"
+      url: "https://www.researchgate.net/profile/Jiajie-She"
+    - label: "Scopus"
+      icon: "ai ai-fw ai-scopus"
+      url: "https://www.scopus.com/authid/detail.uri?authorId=56545171200"
+
+# schema.org Person + link previews -----------------------------------------
+social:
+  type: Person
+  name: Jiajie She
+  links:
+    - https://orcid.org/0000-0003-4286-6411
+    - https://scholar.google.com.hk/citations?user=I4Rl5BMAAAAJ
+    - https://github.com/jackieyihkb
+    - https://www.researchgate.net/profile/Jiajie-She
+    - https://www.scopus.com/authid/detail.uri?authorId=56545171200
+
+# Footer icons --------------------------------------------------------------
+footer:
+  links:
+    - label: "ORCID"
+      icon: "ai ai-fw ai-orcid"
+      url: "https://orcid.org/0000-0003-4286-6411"
+    - label: "Google Scholar"
+      icon: "ai ai-fw ai-google-scholar"
+      url: "https://scholar.google.com.hk/citations?user=I4Rl5BMAAAAJ"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/jackieyihkb"
+    - label: "ResearchGate"
+      icon: "ai ai-fw ai-researchgate"
+      url: "https://www.researchgate.net/profile/Jiajie-She"
+    - label: "Scopus"
+      icon: "ai ai-fw ai-scopus"
+      url: "https://www.scopus.com/authid/detail.uri?authorId=56545171200"
+    - label: "WU LAB"
+      icon: "fas fa-fw fa-flask"
+      url: "https://longjunwulab.org/"
+
+# Page defaults -------------------------------------------------------------
 defaults:
   - scope:
       path: ''

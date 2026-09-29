@@ -1,13 +1,15 @@
 main:
   - title: Research
-    url: research
+    url: /research.html
   - title: Publications
-    url: publications
-  - title: Platform
-    url: platform
+    url: /publications.html
+  - title: Databases
+    url: /platform.html
   - title: Patents
-    url: patents
+    url: /patents.html
+  - title: Teaching
+    url: /teaching.html
   - title: Photos
-    url: photos
+    url: /photos.html
   - title: Contact
-    url: contact
+    url: /contact.html

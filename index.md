@@ -1,32 +1,182 @@
 ---
-title: >
-  <br><br><br>
-  Research Interest
+title: "Deep-ocean multi-omics"
+excerpt: >-
+  I build databases and analysis platforms that make sense of genomes nobody has
+  looked at yet — from the deep sea to crops and to human reproduction.
 layout: splash
 classes:
   - landing
   - dark-theme
 header:
-  overlay_color: '#000'
-  overlay_filter: 0.33
-  overlay_image: /assets/photos/main4.jpg
-  #actions:
-  #  - label: label to be added!
-  #    url: people#join-us
-  caption: HKUST
-excerpt: Bioinformatics, Database Construction, Deep-Sea Evolution and Epigenetics
+  overlay_color: "#04121f"
+  overlay_filter: 0.25
+  actions:
+    - label: "Selected publications"
+      url: "/publications.html"
+    - label: "Databases"
+      url: "/platform.html"
+    - label: "Contact"
+      url: "/contact.html"
+  caption: "Shenzhen Polytechnic University · School of Food and Drug"
 ---
 
-### About me
+<section class="home-section home-about" markdown="0">
+  <div class="about-grid">
+    <div class="about-photo">
+      <img src="/assets/images/bio-photo.jpg" alt="Portrait of Jiajie She">
+    </div>
+    <div class="about-text">
+      <h2>About me</h2>
+      <p>
+        I am a <strong>Lecturer</strong> at the
+        <a href="https://fd.szpu.edu.cn/">School of Food and Drug</a>,
+        <a href="https://www.szpu.edu.cn/">Shenzhen Polytechnic University</a>.
+        I did my postdoctoral research in
+        <a href="https://longjunwulab.org/">Prof. Longjun Wu&rsquo;s lab</a>
+        (Department of Ocean Science, HKUST) and, before that, at the Reproductive
+        Medicine Centre of Shenzhen Second People&rsquo;s Hospital.
+      </p>
+      <p>
+        My work sits where <strong>bioinformatics</strong>, <strong>comparative
+        genomics</strong> and <strong>database engineering</strong> meet. The deep
+        ocean is the largest and least explored habitat on Earth, and the organisms
+        living there have evolved under high pressure, permanent darkness and
+        severe nutrient limitation. I turn the growing pile of deep-sea omics data
+        into resources that other people can actually use &mdash; genomes,
+        co-expression networks, single-cell and metagenome collections, all wired
+        together behind one search box and one set of analysis tools.
+      </p>
+      <p>
+        I care a lot about the unglamorous half of this work: reproducible
+        pipelines, clean interfaces, documentation that lets a wet-lab biologist
+        get an answer without emailing me first.
+      </p>
+      <ul class="stat-row">
+        <li><span class="stat-number">22</span><span class="stat-label">SCI papers</span></li>
+        <li><span class="stat-number">10</span><span class="stat-label">first / co-first author</span></li>
+        <li><span class="stat-number">500+</span><span class="stat-label">citations</span></li>
+        <li><span class="stat-number">2</span><span class="stat-label">patents granted</span></li>
+      </ul>
+      <p class="link-row">
+        <a class="btn btn--info" href="/publications.html">Publications</a>
+        <a class="btn btn--info" href="https://scholar.google.com.hk/citations?user=I4Rl5BMAAAAJ">Google Scholar</a>
+        <a class="btn btn--info" href="https://orcid.org/0000-0003-4286-6411">ORCID</a>
+      </p>
+    </div>
+  </div>
+</section>
 
-I hold a PhD degree on **Bioinformatics** (China Agricultural University, Beijing, China, **2015-2020**). And then, i continued to be a **Postdoctoral Researcher** at Shenzhen Second People's Hospital (**2020-2023**) and received a Grant from the Science and Technology Innovation Committee of Shenzhen. Now, i'm a **joint Postdoctoral Researcher** (GML Supervisor: Prof. Pei-yuan Qian, HKUST Supervisor: Prof. Longjun Wu) from Joint Postdoctoral Training Program launched by GML and HKB.
+<section class="home-section" markdown="0">
+  <h2>Research highlights</h2>
+  <div class="card-grid">
+    <article class="card card--feature">
+      <p class="card-kicker">Nucleic Acids Research · 2026</p>
+      <h3>DOO: a multi-omics atlas for the deep ocean</h3>
+      <p>
+        First-author paper in the <em>NAR</em> Database Issue. DOO gathers 72 genomes,
+        950 bulk transcriptomes, 15 single-cell transcriptomes and 1,112 metagenomes
+        from 68 species across seven phyla into one queryable resource for deep-ocean
+        biology.
+      </p>
+      <p class="card-links">
+        <a href="https://doi.org/10.1093/nar/gkaf1096">Paper</a>
+        <a href="https://DeepOceanOmics.org">Browse DOO</a>
+      </p>
+    </article>
+    <article class="card">
+      <p class="card-kicker">Databases</p>
+      <h3>Resources that outlive the paper</h3>
+      <p>
+        Deep Ocean Omics, TomAP, HpeNet, croFGD, PNRD &mdash; a series of multi-omics
+        platforms where co-expression networks, chromatin states, gene families and
+        functional annotation are integrated, searchable and kept online.
+      </p>
+      <p class="card-links">
+        <a href="/platform.html">See all databases</a>
+      </p>
+    </article>
+    <article class="card">
+      <p class="card-kicker">Methods</p>
+      <h3>From sequence to clinical and evolutionary signal</h3>
+      <p>
+        Machine-learning models for endometriosis diagnosis, transcriptome-wide m<sup>6</sup>A
+        mapping in early pregnancy loss, and positive-selection scans that trace how
+        deep-sea lineages acquired their symbionts.
+      </p>
+      <p class="card-links">
+        <a href="/research.html">Read the research</a>
+      </p>
+    </article>
+  </div>
+</section>
 
-Outside of my academic life, i'm interested in **traveling and sports**, like badminton, table tennis, hiking. Now, i'm learning to play tennis and continue swimming. 
+<section class="home-section" markdown="0">
+  <h2>News</h2>
+  <ul class="news-list">
+    <li>
+      <span class="news-date">2026</span>
+      <span class="news-body">Joined the School of Food and Drug, Shenzhen Polytechnic University, as a Lecturer.</span>
+    </li>
+    <li>
+      <span class="news-date">2026</span>
+      <span class="news-body">Co-author on the Portuguese man-of-war genome paper in <em>National Science Review</em>, on the genetic basis of medusa loss and sea&ndash;air interface adaptation.</span>
+    </li>
+    <li>
+      <span class="news-date">2025</span>
+      <span class="news-body"><strong>DOO: integrated multi-omics resources for deep ocean organisms</strong> published in <em>Nucleic Acids Research</em> (Database Issue) as first author.</span>
+    </li>
+  </ul>
+</section>
 
-### Details
+<section class="home-section" markdown="0">
+  <h2>Experience</h2>
+  <ul class="timeline">
+    <li>
+      <span class="timeline-when">2026 &ndash; now</span>
+      <span class="timeline-what">
+        <strong>Lecturer</strong>, School of Food and Drug, Shenzhen Polytechnic University
+      </span>
+    </li>
+    <li>
+      <span class="timeline-when">2023 &ndash; 2026</span>
+      <span class="timeline-what">
+        <strong>Postdoctoral Fellow</strong>,
+        <a href="https://longjunwulab.org/">WU LAB</a>, Department of Ocean Science, HKUST
+      </span>
+    </li>
+    <li>
+      <span class="timeline-when">2020 &ndash; 2023</span>
+      <span class="timeline-what">
+        <strong>Postdoctoral Researcher</strong>, Reproductive Medicine Centre,
+        Shenzhen Second People&rsquo;s Hospital
+      </span>
+    </li>
+    <li>
+      <span class="timeline-when">2015 &ndash; 2020</span>
+      <span class="timeline-what">
+        <strong>PhD in Bioinformatics</strong>, China Agricultural University, Beijing
+      </span>
+    </li>
+    <li>
+      <span class="timeline-when">2011 &ndash; 2015</span>
+      <span class="timeline-what">
+        <strong>BSc</strong>, Chongqing University of Posts and Telecommunications
+      </span>
+    </li>
+  </ul>
+</section>
 
-+ [ORCID](https://orcid.org/0000-0003-4286-6411)
-+ [Google Scholar](https://scholar.google.com.hk/citations?user=I4Rl5BMAAAAJ)
-+ [Github](https://github.com/jackieyihkb)
-+ [Researchgate](https://www.researchgate.net/profile/Jiajie-She)
-+ [Scopus](https://www.scopus.com/authid/detail.uri?authorId=56545171200)
+<section class="home-section home-contact" markdown="0">
+  <h2>Get in touch</h2>
+  <p>
+    I am happy to hear from students interested in bioinformatics, and from anyone
+    who wants to use or contribute to the databases. The fastest way to reach me is
+    email: <a href="mailto:jiajie@szpu.edu.cn">jiajie@szpu.edu.cn</a>.
+  </p>
+  <p class="link-row">
+    <a class="btn btn--info" href="mailto:jiajie@szpu.edu.cn">Email</a>
+    <a class="btn btn--info" href="https://github.com/jackieyihkb">GitHub</a>
+    <a class="btn btn--info" href="https://www.researchgate.net/profile/Jiajie-She">ResearchGate</a>
+    <a class="btn btn--info" href="https://www.scopus.com/authid/detail.uri?authorId=56545171200">Scopus</a>
+  </p>
+</section>
