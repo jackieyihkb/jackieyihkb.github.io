@@ -19,8 +19,11 @@ title: Contact
     <li>
       <i class="fas fa-fw fa-flask" aria-hidden="true"></i>
       <span>
-        Formerly: <a href="https://longjunwulab.org/">WU LAB</a>,
-        Department of Ocean Science, HKUST, Clear Water Bay, Kowloon, Hong Kong
+        Feb 2024 &ndash; Aug 2026: Postdoctoral Fellow,
+        <a href="https://longjunwulab.org/">WU LAB</a>, Department of Ocean Science,
+        HKUST, through the joint programme of HKUST and the Guangzhou Marine
+        Laboratory<br>
+        Clear Water Bay, Kowloon, Hong Kong
       </span>
     </li>
   </ul>
