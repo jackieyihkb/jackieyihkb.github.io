@@ -3,10 +3,6 @@ main:
     url: /research.html
   - title: Publications
     url: /publications.html
-  - title: Databases
-    url: /platform.html
-  - title: Patents
-    url: /patents.html
   - title: Teaching
     url: /teaching.html
   - title: Photos

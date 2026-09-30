@@ -5,6 +5,9 @@ classes:
   - fullwidth
   - page-photos
 gallery:
+  - image_path: assets/images/campus-hero-1200.jpg
+    alt: "Xilihu campus, Shenzhen Polytechnic University"
+    title: "Xilihu Campus — Shenzhen Polytechnic University"
   - image_path: assets/images/software/DeepSeaDB.jpg
     alt: "DeepSeaDB interface"
     title: "DeepSeaDB — an integrated genomic database for deep-sea species"

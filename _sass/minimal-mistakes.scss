@@ -125,10 +125,11 @@ h4 {
 /* ==========================================================================
    Custom "deep ocean" theme
    Added on top of Minimal Mistakes. Nothing above this line was modified.
-   Palette: abyss navy -> deep teal, with a bioluminescent accent.
+   Palette: deep ocean blue -> teal, with a bioluminescent accent.
+   The base blue is tuned to sit next to the campus photo used in the hero.
    ========================================================================== */
 
-$sea-abyss:  #04121f;
+$sea-abyss:  #082c49;
 $sea-deep:   #0b2b45;
 $sea-mid:    #116d8a;
 $sea-accent: #16a3a3;
@@ -199,26 +200,58 @@ a:focus {
   }
 }
 
-/* --- Hero: deep-sea gradient instead of a missing photo ------------------ */
+/* --- Hero: campus photo with a deep-ocean scrim -------------------------- */
 
 .page__hero--overlay {
+  position: relative;
   background-color: $sea-abyss;
+  /* Fallback used only when a hero has no photo. When `header.overlay_image`
+     is set, Minimal Mistakes writes the photo into the element's inline
+     style, which beats this rule, so the photo wins. */
   background-image:
     radial-gradient(ellipse 75% 65% at 12% 0%, rgba(95, 227, 207, 0.20), transparent 62%),
     radial-gradient(ellipse 70% 75% at 88% 100%, rgba(22, 163, 163, 0.30), transparent 66%),
     linear-gradient(160deg, #04121f 0%, #08263c 46%, #0e4f68 100%);
   background-size: cover;
-  background-position: center;
+  background-position: center 52%;
   border-bottom: 3px solid $sea-accent;
+
+  /* Scrim painted over the photo: dark on the left where the title sits,
+     almost clear on the right so the campus stays visible. */
+  &:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+    pointer-events: none;
+    background-image:
+      linear-gradient(100deg, rgba(8, 44, 73, 0.74) 0%, rgba(8, 44, 73, 0.42) 44%, rgba(8, 44, 73, 0.04) 100%),
+      linear-gradient(180deg, rgba(8, 44, 73, 0.35) 0%, rgba(8, 44, 73, 0) 42%, rgba(8, 44, 73, 0.5) 100%);
+  }
+
+  /* Lift the hero content above the scrim. `.page__hero-caption` is already
+     absolutely positioned by the theme, so only its z-index may be touched. */
+  .wrapper {
+    position: relative;
+    z-index: 1;
+  }
+
+  .page__hero-caption {
+    z-index: 1;
+  }
 
   .page__title {
     font-weight: 700;
     letter-spacing: -0.01em;
-    text-shadow: 0 2px 24px rgba(0, 0, 0, 0.55);
+    text-shadow: 0 2px 24px rgba(0, 0, 0, 0.8);
   }
 
   .page__lead {
     max-width: 44em;
+    text-shadow: 0 1px 14px rgba(0, 0, 0, 0.85);
   }
 
   .btn {

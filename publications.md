@@ -60,3 +60,8 @@ Every entry below was checked against the DOI record. Author lists use
 - Da L, Liu Y, Yang J, Tian T, **She J**, Ma X, Xu W, Su Z. **AppleMDO: a multi-dimensional omics database for apple co-expression networks and chromatin states.** *Frontiers in Plant Science*, 2019, 10: 1333. [10.3389/fpls.2019.01333](https://doi.org/10.3389/fpls.2019.01333)
 
 - **She J**, Yan H, Yang J, Xu W, Su Z. **croFGD: *Catharanthus roseus* functional genomics database.** *Frontiers in Genetics*, 2019, 10: 238. [10.3389/fgene.2019.00238](https://doi.org/10.3389/fgene.2019.00238)
+
+---
+
+Two granted patents and two registered software copyrights are listed on the
+[patents page](/patents.html).

@@ -8,8 +8,11 @@ classes:
   - landing
   - dark-theme
 header:
-  overlay_color: "#04121f"
+  overlay_color: "#082c49"
+  overlay_image: /assets/images/campus-hero.jpg
   overlay_filter: 0.25
+  # keep the designed card for link previews instead of the raw photo
+  og_image: /assets/images/social-card.png
   actions:
     - label: "Selected publications"
       url: "/publications.html"
@@ -17,7 +20,7 @@ header:
       url: "/platform.html"
     - label: "Contact"
       url: "/contact.html"
-  caption: "Shenzhen Polytechnic University · School of Food and Drug"
+  caption: "Xilihu Campus · Shenzhen Polytechnic University"
 ---
 
 <section class="home-section home-about" markdown="0">
