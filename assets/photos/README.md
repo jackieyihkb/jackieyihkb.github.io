@@ -3,26 +3,43 @@
 Drop image files in here and they appear on the **Gallery** page
 (https://jackieyihkb.github.io/photos.html) automatically on the next build.
 
+## Layout
+
+```
+assets/photos/
+├── photo-01.webp … photo-43.webp   → shown under "Trips, fieldwork and everything else"
+├── thumbs/                          → 400px grid versions (optional)
+└── lab/
+    ├── 2024-01.webp … 2026-04.webp  → shown under "Lab life"
+    └── thumbs/                      → 400px grid versions (optional)
+```
+
+Anything dropped straight into `assets/photos/` (not `lab/`) lands in the second
+section. Anything in `lab/` lands in the first.
+
+## Rules
+
 - Supported: `.jpg` `.jpeg` `.png` `.webp` `.gif`
-- Landscape images around 1600×1000 px look best in the grid
-- Keep each file under about 1 MB so the page stays quick to load
-- Files are shown in alphabetical order, so a name like `2026-07-lab.jpg`
+- Files are listed in **alphabetical order**, so a name like `2026-07-lab.webp`
   sorts sensibly
+- A `thumbs/` version is used for the grid and the full file opens on click. If a
+  photo has no thumbnail the grid just falls back to the full image, so a new
+  photo works without generating anything
+- Keep full-size images around 1400px on the long edge, ideally under 300 KB
+- Images are displayed in a masonry grid, so portrait and landscape both look
+  fine — no need to crop them square
 
-Anything that is not one of the extensions above (including this file) is
-ignored by the gallery.
+## What was used to build the current set
 
-## Getting photos off QQ Zone (QQ空间)
+- `photo-01` … `photo-43` were converted from the `psc*.webp` files, kept in
+  album order (the file without a number is first)
+- `lab/` holds photos from https://longjunwulab.org/recreation.html for
+  **2024–2026**, the years of the postdoc. Photos from 2022–2023 were left out.
+- Everything was resized to 1400px, EXIF-rotated, and had all metadata stripped
+  (which also removes any GPS coordinates)
 
-QQ Zone albums sit behind a login, so they cannot be fetched automatically.
-Manual route:
+## Adding more later
 
-1. Open the album on https://user.qzone.qq.com/ in a browser and log in.
-2. Click a photo to open the large view, then save it (right-click → Save image,
-   or use the album's download button).
-3. Save them somewhere on this computer, then copy the ones you want into this
-   folder.
-4. Commit and push — the gallery picks them up.
-
-If a photo is large (a phone snapshot can easily be 4–8 MB), it is worth
-resizing to ~1600 px wide before committing.
+1. Put the file in this folder (or `lab/`)
+2. To generate a thumbnail too, run the build script
+3. Commit and push — no edits to `photos.md` needed

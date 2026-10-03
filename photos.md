@@ -6,45 +6,48 @@ classes:
   - page-photos
 ---
 
-Photos from the lab, from conferences and from fieldwork.
+Lab life during my postdoc, and photos from trips and fieldwork. This page reads
+the `assets/photos/` folder in the repository directly, so adding a picture never
+means editing anything here &mdash; drop the file in and it shows up on the next
+build. Click any photo to open it full size.
 
-This page builds itself from the `assets/photos/` folder in the repository, so
-adding pictures never means editing this file &mdash; just drop the image files
-in and they appear here on the next build.
-
-{%- assign photo_exts = ".jpg,.jpeg,.png,.webp,.gif" -%}
-
-{%- comment -%} count the images first so we know whether to show a placeholder {%- endcomment -%}
-{%- assign photo_count = 0 -%}
+{%- assign exts = ".jpg,.jpeg,.png,.webp,.gif" -%}
+{%- assign lab_n = 0 -%}
+{%- assign own_n = 0 -%}
 {%- for f in site.static_files -%}
-  {%- assign ext = f.extname | downcase -%}
-  {%- if f.path contains "/assets/photos/" and photo_exts contains ext -%}
-    {%- assign photo_count = photo_count | plus: 1 -%}
-  {%- endif -%}
+  {%- unless f.path contains "/thumbs/" -%}
+    {%- assign e = f.extname | downcase -%}
+    {%- if exts contains e and f.path contains "/assets/photos/" -%}
+      {%- if f.path contains "/assets/photos/lab/" -%}
+        {%- assign lab_n = lab_n | plus: 1 -%}
+      {%- else -%}
+        {%- assign own_n = own_n | plus: 1 -%}
+      {%- endif -%}
+    {%- endif -%}
+  {%- endunless -%}
 {%- endfor -%}
 
-{% if photo_count > 0 %}
-Showing **{{ photo_count }}** photo{% if photo_count != 1 %}s{% endif %}. Click
-any image to open it full size.
+{% if lab_n > 0 %}
+## Lab life
 
-<div class="photo-grid">
-{%- for f in site.static_files -%}
-  {%- assign ext = f.extname | downcase -%}
-  {%- if f.path contains "/assets/photos/" and photo_exts contains ext %}
-  <a href="{{ f.path | relative_url }}" target="_blank" rel="noopener">
-    <img src="{{ f.path | relative_url }}" alt="" loading="lazy">
-  </a>
-  {%- endif -%}
-{%- endfor %}
-</div>
+WU LAB, Department of Ocean Science, HKUST &mdash; {{ lab_n }} photos from
+2024&ndash;2026.
 
-{% else %}
+{% include photo_grid.html section="lab" %}
+{% endif %}
+
+{% if own_n > 0 %}
+## Trips, fieldwork and everything else
+
+{{ own_n }} photos.
+
+{% include photo_grid.html section="own" %}
+{% endif %}
+
+{% if lab_n == 0 and own_n == 0 %}
 <div class="notice--info" markdown="1">
-**No photos here yet.**
-
-To fill this page, put image files into the `assets/photos/` folder of the
-repository. Any `.jpg`, `.jpeg`, `.png`, `.webp` or `.gif` in that folder shows
-up here automatically &mdash; no editing required. Landscape images around
-1600&times;1000 look best in the grid.
+**No photos here yet.** Put image files into `assets/photos/` (or
+`assets/photos/lab/`) and they will appear on this page the next time the site is
+built.
 </div>
 {% endif %}

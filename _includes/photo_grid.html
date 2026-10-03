@@ -1,0 +1,55 @@
+{%- comment -%}
+  Renders one masonry grid of photos found under assets/photos/.
+
+  Usage:  {% include photo_grid.html section="lab" %}    -> assets/photos/lab/
+          {% include photo_grid.html section="own" %}    -> assets/photos/ (not lab/)
+
+  Uses a 400px thumbnail when one exists under a thumbs/ folder, otherwise falls
+  back to the full image, so dropping a new photo in without a thumbnail still
+  works. Only core Liquid tags are used on purpose - a build error here would
+  take the whole site down.
+{%- endcomment -%}
+{%- assign exts = ".jpg,.jpeg,.png,.webp,.gif" -%}
+
+{%- comment -%} index of available thumbnails, as "|name|" so matches are exact {%- endcomment -%}
+{%- assign thumb_index = "|" -%}
+{%- for t in site.static_files -%}
+  {%- if t.path contains "/thumbs/" -%}
+    {%- assign thumb_index = thumb_index | append: t.basename | append: "|" -%}
+  {%- endif -%}
+{%- endfor -%}
+
+<div class="photo-grid">
+{%- for f in site.static_files -%}
+  {%- unless f.path contains "/thumbs/" -%}
+    {%- assign e = f.extname | downcase -%}
+    {%- assign want = false -%}
+    {%- if include.section == "lab" -%}
+      {%- if exts contains e and f.path contains "/assets/photos/lab/" -%}
+        {%- assign want = true -%}
+      {%- endif -%}
+    {%- else -%}
+      {%- if exts contains e and f.path contains "/assets/photos/" -%}
+        {%- unless f.path contains "/assets/photos/lab/" -%}
+          {%- assign want = true -%}
+        {%- endunless -%}
+      {%- endif -%}
+    {%- endif -%}
+    {%- if want -%}
+      {%- if include.section == "lab" -%}
+        {%- assign thumb = f.path | replace: "/assets/photos/lab/", "/assets/photos/lab/thumbs/" -%}
+      {%- else -%}
+        {%- assign thumb = f.path | replace: "/assets/photos/", "/assets/photos/thumbs/" -%}
+      {%- endif -%}
+      {%- assign needle = f.basename | prepend: "|" -%}
+      {%- assign src = f.path -%}
+      {%- if thumb_index contains needle -%}
+        {%- assign src = thumb -%}
+      {%- endif %}
+  <a href="{{ f.path | relative_url }}" target="_blank" rel="noopener">
+    <img src="{{ src | relative_url }}" alt="" loading="lazy">
+  </a>
+    {%- endif -%}
+  {%- endunless -%}
+{%- endfor %}
+</div>
