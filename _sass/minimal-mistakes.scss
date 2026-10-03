@@ -294,12 +294,23 @@ a:focus {
   display: grid;
   grid-template-columns: minmax(280px, 44%) minmax(300px, 1fr);
   gap: 2.5em 3em;
-  align-items: start;
+  /* stretch so the portrait column ends level with the text, whatever its height */
+  align-items: stretch;
 }
 
+.about-photo {
+  display: flex;
+}
+
+/* The photo fills the column and is cropped rather than squashed. The source is
+   4:3 and the slot is always taller than that, so cover only ever trims the
+   left/right edges - the vertical framing is untouched and the subject sits
+   near the horizontal centre, so `center` keeps them in shot. */
 .about-photo img {
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
   border: 1px solid $sea-line;
   border-radius: 10px;
   box-shadow: 0 12px 30px rgba(4, 18, 31, 0.18);
@@ -566,10 +577,18 @@ a:focus {
   .about-grid {
     grid-template-columns: 1fr;
     gap: 1.5em;
+    align-items: start;
   }
 
+  /* once stacked there is no height to match, so show the photo uncropped */
   .about-photo {
+    display: block;
     max-width: 420px;
+  }
+
+  .about-photo img {
+    height: auto;
+    object-fit: fill;
   }
 }
 
