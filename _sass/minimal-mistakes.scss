@@ -292,7 +292,10 @@ a:focus {
    the leftover space and run to ~110 characters per line. */
 .about-grid {
   display: grid;
-  grid-template-columns: minmax(280px, 44%) minmax(300px, 1fr);
+  /* 36% instead of 44%: at 44% the photo became a near-square block that
+     visually outweighed the text. The text column is capped so shrinking the
+     photo does not just hand the space back to a 900px-wide paragraph. */
+  grid-template-columns: minmax(260px, 36%) minmax(300px, 700px);
   gap: 2.5em 3em;
   /* stretch so the portrait column ends level with the text, whatever its height */
   align-items: stretch;
