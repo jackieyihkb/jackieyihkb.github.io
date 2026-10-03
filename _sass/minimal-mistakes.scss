@@ -291,19 +291,25 @@ a:focus {
   display: flex;
   flex-wrap: wrap;
   gap: 2.5em;
-  align-items: flex-start;
+  /* stretch (not flex-start) so the portrait column ends level with the text */
+  align-items: stretch;
 }
 
 .about-photo {
-  flex: 0 0 200px;
+  flex: 0 0 260px;
+  display: flex;
 }
 
 .about-photo img {
-  width: 200px;
-  height: auto;
-  border: 0;
-  border-radius: 14px;
-  box-shadow: 0 0 0 1px rgba(8, 44, 73, 0.1), 0 16px 36px rgba(8, 44, 73, 0.18);
+  width: 100%;
+  height: 100%;
+  min-height: 280px;
+  object-fit: cover;
+  /* keeps the face in frame when the column is taller than the photo */
+  object-position: center 25%;
+  border: 1px solid $sea-line;
+  border-radius: 10px;
+  box-shadow: 0 12px 30px rgba(4, 18, 31, 0.18);
 }
 
 .about-text {
@@ -316,11 +322,8 @@ a:focus {
   display: flex;
   flex-wrap: wrap;
   gap: 1.1em 2.2em;
-  margin: 1.7em 0;
-  padding: 1em 1.3em;
-  background: #f1f8fa;
-  border: 1px solid $sea-line;
-  border-radius: 10px;
+  margin: 1.6em 0;
+  padding: 0;
 }
 
 .stat-row li {
@@ -345,60 +348,6 @@ a:focus {
 
 .link-row .btn {
   margin: 0 0.5em 0.5em 0;
-}
-
-/* --- About: identity links ------------------------------------------------
-   Lightweight pills instead of block buttons: the chunky full-width buttons
-   were heavier than the portrait itself. */
-
-.about-links {
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5em;
-  margin: 0;
-  padding: 0;
-}
-
-.about-links li {
-  margin: 0;
-}
-
-.about-links a {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.45em;
-  padding: 0.35em 0.85em;
-  background: #fff;
-  border: 1px solid $sea-line;
-  border-radius: 999px;
-  color: $sea-mid;
-  font-size: 0.86em;
-  font-weight: 600;
-  line-height: 1.7;
-  white-space: nowrap;
-  transition: background-color 0.18s ease, border-color 0.18s ease,
-    color 0.18s ease, transform 0.18s ease;
-}
-
-.about-links a:hover,
-.about-links a:focus {
-  background: $sea-accent;
-  border-color: $sea-accent;
-  color: #fff;
-  transform: translateY(-2px);
-}
-
-.about-links a.is-primary {
-  background: $sea-mid;
-  border-color: $sea-mid;
-  color: #fff;
-}
-
-.about-links a.is-primary:hover,
-.about-links a.is-primary:focus {
-  background: $sea-accent;
-  border-color: $sea-accent;
 }
 
 /* --- Cards --------------------------------------------------------------- */
@@ -613,26 +562,16 @@ a:focus {
     gap: 1.5em;
   }
 
+  /* once the columns wrap, the portrait no longer needs to match a height */
   .about-photo {
     flex: 0 0 150px;
+    display: block;
   }
 
   .about-photo img {
     width: 150px;
-  }
-
-  .about-links {
-    gap: 0.4em;
-  }
-
-  .about-links a {
-    font-size: 0.8em;
-    padding: 0.3em 0.7em;
-  }
-
-  .stat-row {
-    gap: 0.9em 1.5em;
-    padding: 0.9em 1em;
+    height: auto;
+    min-height: 0;
   }
 
   .timeline li,

@@ -26,7 +26,7 @@ header:
 <section class="home-section home-about" markdown="0">
   <div class="about-grid">
     <div class="about-photo">
-      <img src="/assets/images/bio-photo.jpg" alt="Portrait of Jiajie She">
+      <img src="/assets/images/about-portrait.jpg" alt="Portrait of Jiajie She">
     </div>
     <div class="about-text">
       <h2>About me</h2>
@@ -61,16 +61,38 @@ header:
         <li><span class="stat-number">500+</span><span class="stat-label">citations</span></li>
         <li><span class="stat-number">2</span><span class="stat-label">patents granted</span></li>
       </ul>
-      <ul class="about-links">
-        <li><a class="is-primary" href="/publications.html"><i class="fas fa-book-open" aria-hidden="true"></i>Publications</a></li>
-        <li><a href="mailto:jiajie@szpu.edu.cn"><i class="fas fa-envelope" aria-hidden="true"></i>Email</a></li>
-        <li><a href="https://github.com/jackieyihkb"><i class="fab fa-github" aria-hidden="true"></i>GitHub</a></li>
-        <li><a href="https://orcid.org/0000-0003-4286-6411"><i class="ai ai-orcid" aria-hidden="true"></i>ORCID</a></li>
-        <li><a href="https://scholar.google.com.hk/citations?user=I4Rl5BMAAAAJ"><i class="ai ai-google-scholar" aria-hidden="true"></i>Scholar</a></li>
-        <li><a href="https://www.researchgate.net/profile/Jiajie-She"><i class="ai ai-researchgate" aria-hidden="true"></i>ResearchGate</a></li>
-        <li><a href="https://www.scopus.com/authid/detail.uri?authorId=56545171200"><i class="ai ai-scopus" aria-hidden="true"></i>Scopus</a></li>
-      </ul>
+      <p class="link-row">
+        <a class="btn btn--info" href="/publications.html">Publications</a>
+        <a class="btn btn--info" href="https://scholar.google.com.hk/citations?user=I4Rl5BMAAAAJ">Google Scholar</a>
+        <a class="btn btn--info" href="https://orcid.org/0000-0003-4286-6411">ORCID</a>
+      </p>
     </div>
+  </div>
+</section>
+
+<section class="home-section" markdown="0">
+  <h2>Postdoctoral supervisors</h2>
+  <div class="card-grid">
+    <article class="card">
+      <p class="card-kicker">HKUST &middot; WU LAB</p>
+      <h3><a href="https://longjunwulab.org/">Prof. Longjun Wu</a></h3>
+      <p>
+        Marine evolutionary developmental biology. His lab works on the
+        evolutionary and ecological mechanisms that generate and maintain marine
+        biodiversity, mostly in understudied invertebrates &mdash; cnidarians,
+        molluscs and zooplankton &mdash; including adaptation to the deep sea.
+      </p>
+    </article>
+    <article class="card">
+      <p class="card-kicker">HKUST &middot; QIAN&rsquo;S LAB</p>
+      <h3><a href="https://qianlab.hkust.edu.hk/">Prof. Pei-Yuan Qian</a></h3>
+      <p>
+        Larval biology of marine invertebrates. His lab studies how settling
+        larvae read chemical cues from marine biofilms, and the microbial
+        metagenomics of extreme habitats such as deep-sea brine pools, corals and
+        sponges.
+      </p>
+    </article>
   </div>
 </section>
 
@@ -176,4 +198,14 @@ header:
       </span>
     </li>
   </ul>
+</section>
+
+<section class="home-section home-contact" markdown="0">
+  <h2>Get in touch</h2>
+  <p class="link-row">
+    <a class="btn btn--info" href="mailto:jiajie@szpu.edu.cn">Email</a>
+    <a class="btn btn--info" href="https://github.com/jackieyihkb">GitHub</a>
+    <a class="btn btn--info" href="https://www.researchgate.net/profile/Jiajie-She">ResearchGate</a>
+    <a class="btn btn--info" href="https://www.scopus.com/authid/detail.uri?authorId=56545171200">Scopus</a>
+  </p>
 </section>
