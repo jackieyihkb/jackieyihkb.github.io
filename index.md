@@ -34,12 +34,11 @@ header:
         I am a <strong>Lecturer</strong> at the
         <a href="https://fd.szpu.edu.cn/">School of Food and Drug</a>,
         <a href="https://www.szpu.edu.cn/">Shenzhen Polytechnic University</a>.
-        From February 2024 to August 2026 I was a postdoctoral fellow in
-        <a href="https://longjunwulab.org/">Prof. Longjun Wu&rsquo;s lab</a>
-        (Department of Ocean Science, HKUST), through the joint postdoctoral
-        programme run by HKUST and the Guangzhou Marine Laboratory; before that I
-        worked at the Reproductive Medicine Centre of Shenzhen Second
-        People&rsquo;s Hospital.
+        From February 2024 to August 2026 I was a <strong>joint postdoctoral
+        fellow</strong> of HKUST and the Guangzhou Marine Laboratory, supervised by
+        <a href="https://longjunwulab.org/">Prof. Longjun Wu</a> (Department of
+        Ocean Science, HKUST) and Prof. Pei-Yuan Qian; before that I worked at the
+        Reproductive Medicine Centre of Shenzhen Second People&rsquo;s Hospital.
       </p>
       <p>
         My work sits where <strong>bioinformatics</strong>, <strong>comparative
@@ -145,7 +144,7 @@ header:
     <li>
       <span class="timeline-when">Feb 2024 &ndash; Aug 2026</span>
       <span class="timeline-what">
-        <strong>Postdoctoral Fellow</strong> &mdash; joint programme of HKUST and the
+        <strong>Joint Postdoctoral Fellow</strong> &mdash; HKUST and the
         Guangzhou Marine Laboratory (GML)<br>
         <span class="timeline-note">
           <a href="https://longjunwulab.org/">WU LAB</a>, Department of Ocean Science,
