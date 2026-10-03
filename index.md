@@ -27,6 +27,12 @@ header:
   <div class="about-grid">
     <div class="about-photo">
       <img src="/assets/images/bio-photo.jpg" alt="Portrait of Jiajie She">
+      <p class="link-row about-actions">
+        <a class="btn btn--info" href="mailto:jiajie@szpu.edu.cn">Email</a>
+        <a class="btn btn--info" href="https://github.com/jackieyihkb">GitHub</a>
+        <a class="btn btn--info" href="https://www.researchgate.net/profile/Jiajie-She">ResearchGate</a>
+        <a class="btn btn--info" href="https://www.scopus.com/authid/detail.uri?authorId=56545171200">Scopus</a>
+      </p>
     </div>
     <div class="about-text">
       <h2>About me</h2>
@@ -172,14 +178,4 @@ header:
       </span>
     </li>
   </ul>
-</section>
-
-<section class="home-section home-contact" markdown="0">
-  <h2>Get in touch</h2>
-  <p class="link-row">
-    <a class="btn btn--info" href="mailto:jiajie@szpu.edu.cn">Email</a>
-    <a class="btn btn--info" href="https://github.com/jackieyihkb">GitHub</a>
-    <a class="btn btn--info" href="https://www.researchgate.net/profile/Jiajie-She">ResearchGate</a>
-    <a class="btn btn--info" href="https://www.scopus.com/authid/detail.uri?authorId=56545171200">Scopus</a>
-  </p>
 </section>

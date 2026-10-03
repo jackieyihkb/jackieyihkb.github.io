@@ -344,6 +344,22 @@ a:focus {
   margin: 0 0.5em 0.5em 0;
 }
 
+/* Contact buttons stacked under the portrait, in the portrait's column.
+   Declared after `.link-row .btn` on purpose so the margin reset wins. */
+.about-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45em;
+  width: 200px;
+  margin: 0.9em 0 0;
+}
+
+.about-actions .btn {
+  display: block;
+  margin: 0;
+  text-align: center;
+}
+
 /* --- Cards --------------------------------------------------------------- */
 
 .card-grid {
@@ -562,6 +578,11 @@ a:focus {
 
   .about-photo img {
     width: 150px;
+  }
+
+  .about-actions {
+    width: 150px;
+    font-size: 0.88em;
   }
 
   .timeline li,
