@@ -301,9 +301,9 @@ a:focus {
 .about-photo img {
   width: 200px;
   height: auto;
-  border-radius: 10px;
-  border: 1px solid $sea-line;
-  box-shadow: 0 12px 30px rgba(4, 18, 31, 0.18);
+  border: 0;
+  border-radius: 14px;
+  box-shadow: 0 0 0 1px rgba(8, 44, 73, 0.1), 0 16px 36px rgba(8, 44, 73, 0.18);
 }
 
 .about-text {
@@ -316,8 +316,11 @@ a:focus {
   display: flex;
   flex-wrap: wrap;
   gap: 1.1em 2.2em;
-  margin: 1.6em 0;
-  padding: 0;
+  margin: 1.7em 0;
+  padding: 1em 1.3em;
+  background: #f1f8fa;
+  border: 1px solid $sea-line;
+  border-radius: 10px;
 }
 
 .stat-row li {
@@ -344,20 +347,58 @@ a:focus {
   margin: 0 0.5em 0.5em 0;
 }
 
-/* Contact buttons stacked under the portrait, in the portrait's column.
-   Declared after `.link-row .btn` on purpose so the margin reset wins. */
-.about-actions {
+/* --- About: identity links ------------------------------------------------
+   Lightweight pills instead of block buttons: the chunky full-width buttons
+   were heavier than the portrait itself. */
+
+.about-links {
+  list-style: none;
   display: flex;
-  flex-direction: column;
-  gap: 0.45em;
-  width: 200px;
-  margin: 0.9em 0 0;
+  flex-wrap: wrap;
+  gap: 0.5em;
+  margin: 0;
+  padding: 0;
 }
 
-.about-actions .btn {
-  display: block;
+.about-links li {
   margin: 0;
-  text-align: center;
+}
+
+.about-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45em;
+  padding: 0.35em 0.85em;
+  background: #fff;
+  border: 1px solid $sea-line;
+  border-radius: 999px;
+  color: $sea-mid;
+  font-size: 0.86em;
+  font-weight: 600;
+  line-height: 1.7;
+  white-space: nowrap;
+  transition: background-color 0.18s ease, border-color 0.18s ease,
+    color 0.18s ease, transform 0.18s ease;
+}
+
+.about-links a:hover,
+.about-links a:focus {
+  background: $sea-accent;
+  border-color: $sea-accent;
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+.about-links a.is-primary {
+  background: $sea-mid;
+  border-color: $sea-mid;
+  color: #fff;
+}
+
+.about-links a.is-primary:hover,
+.about-links a.is-primary:focus {
+  background: $sea-accent;
+  border-color: $sea-accent;
 }
 
 /* --- Cards --------------------------------------------------------------- */
@@ -580,9 +621,18 @@ a:focus {
     width: 150px;
   }
 
-  .about-actions {
-    width: 150px;
-    font-size: 0.88em;
+  .about-links {
+    gap: 0.4em;
+  }
+
+  .about-links a {
+    font-size: 0.8em;
+    padding: 0.3em 0.7em;
+  }
+
+  .stat-row {
+    gap: 0.9em 1.5em;
+    padding: 0.9em 1em;
   }
 
   .timeline li,

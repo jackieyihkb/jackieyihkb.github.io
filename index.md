@@ -27,12 +27,6 @@ header:
   <div class="about-grid">
     <div class="about-photo">
       <img src="/assets/images/bio-photo.jpg" alt="Portrait of Jiajie She">
-      <p class="link-row about-actions">
-        <a class="btn btn--info" href="mailto:jiajie@szpu.edu.cn">Email</a>
-        <a class="btn btn--info" href="https://github.com/jackieyihkb">GitHub</a>
-        <a class="btn btn--info" href="https://www.researchgate.net/profile/Jiajie-She">ResearchGate</a>
-        <a class="btn btn--info" href="https://www.scopus.com/authid/detail.uri?authorId=56545171200">Scopus</a>
-      </p>
     </div>
     <div class="about-text">
       <h2>About me</h2>
@@ -67,11 +61,15 @@ header:
         <li><span class="stat-number">500+</span><span class="stat-label">citations</span></li>
         <li><span class="stat-number">2</span><span class="stat-label">patents granted</span></li>
       </ul>
-      <p class="link-row">
-        <a class="btn btn--info" href="/publications.html">Publications</a>
-        <a class="btn btn--info" href="https://scholar.google.com.hk/citations?user=I4Rl5BMAAAAJ">Google Scholar</a>
-        <a class="btn btn--info" href="https://orcid.org/0000-0003-4286-6411">ORCID</a>
-      </p>
+      <ul class="about-links">
+        <li><a class="is-primary" href="/publications.html"><i class="fas fa-book-open" aria-hidden="true"></i>Publications</a></li>
+        <li><a href="mailto:jiajie@szpu.edu.cn"><i class="fas fa-envelope" aria-hidden="true"></i>Email</a></li>
+        <li><a href="https://github.com/jackieyihkb"><i class="fab fa-github" aria-hidden="true"></i>GitHub</a></li>
+        <li><a href="https://orcid.org/0000-0003-4286-6411"><i class="ai ai-orcid" aria-hidden="true"></i>ORCID</a></li>
+        <li><a href="https://scholar.google.com.hk/citations?user=I4Rl5BMAAAAJ"><i class="ai ai-google-scholar" aria-hidden="true"></i>Scholar</a></li>
+        <li><a href="https://www.researchgate.net/profile/Jiajie-She"><i class="ai ai-researchgate" aria-hidden="true"></i>ResearchGate</a></li>
+        <li><a href="https://www.scopus.com/authid/detail.uri?authorId=56545171200"><i class="ai ai-scopus" aria-hidden="true"></i>Scopus</a></li>
+      </ul>
     </div>
   </div>
 </section>
