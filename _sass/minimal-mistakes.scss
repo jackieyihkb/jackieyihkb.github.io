@@ -309,6 +309,22 @@ a:focus {
   min-width: 0;
 }
 
+/* The About heading sits *inside* the grid, so the `.home-section > h2`
+   (direct child) rule never reached it and it fell back to the theme's h2 -
+   a grey underline instead of the teal bar every other section heading has.
+   Give it the same treatment, and drop the theme's top margin so it lines up
+   flush with the top edge of the photo. */
+.about-text > h2 {
+  font-size: 1.5em;
+  line-height: 1.25;
+  padding-left: 0.6em;
+  padding-bottom: 0;
+  border-left: 4px solid $sea-accent;
+  border-bottom: 0;
+  margin-top: 0;
+  margin-bottom: 1em;
+}
+
 .stat-row {
   list-style: none;
   display: flex;
