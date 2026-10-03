@@ -177,11 +177,6 @@ header:
 
 <section class="home-section home-contact" markdown="0">
   <h2>Get in touch</h2>
-  <p>
-    I am happy to hear from students interested in bioinformatics, and from anyone
-    who wants to use or contribute to the databases. The fastest way to reach me is
-    email: <a href="mailto:jiajie@szpu.edu.cn">jiajie@szpu.edu.cn</a>.
-  </p>
   <p class="link-row">
     <a class="btn btn--info" href="mailto:jiajie@szpu.edu.cn">Email</a>
     <a class="btn btn--info" href="https://github.com/jackieyihkb">GitHub</a>
