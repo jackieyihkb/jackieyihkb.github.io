@@ -26,7 +26,7 @@ header:
 <section class="home-section home-about" markdown="0">
   <div class="about-grid">
     <div class="about-photo">
-      <img src="/assets/images/about-portrait.jpg" alt="Portrait of Jiajie She">
+      <img src="/assets/images/about-photo.jpg" alt="Jiajie She on a ridge above the Sai Kung coast, Hong Kong">
     </div>
     <div class="about-text">
       <h2>About me</h2>

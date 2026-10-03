@@ -291,22 +291,16 @@ a:focus {
   display: flex;
   flex-wrap: wrap;
   gap: 2.5em;
-  /* stretch (not flex-start) so the portrait column ends level with the text */
-  align-items: stretch;
+  align-items: flex-start;
 }
 
 .about-photo {
-  flex: 0 0 260px;
-  display: flex;
+  flex: 0 0 300px;
 }
 
 .about-photo img {
   width: 100%;
-  height: 100%;
-  min-height: 280px;
-  object-fit: cover;
-  /* keeps the face in frame when the column is taller than the photo */
-  object-position: center 25%;
+  height: auto;
   border: 1px solid $sea-line;
   border-radius: 10px;
   box-shadow: 0 12px 30px rgba(4, 18, 31, 0.18);
@@ -562,16 +556,14 @@ a:focus {
     gap: 1.5em;
   }
 
-  /* once the columns wrap, the portrait no longer needs to match a height */
+  /* a wide photo reads better stacked above the text on narrow screens */
   .about-photo {
-    flex: 0 0 150px;
-    display: block;
+    flex: 1 1 100%;
   }
 
   .about-photo img {
-    width: 150px;
-    height: auto;
-    min-height: 0;
+    width: 100%;
+    max-width: 420px;
   }
 
   .timeline li,
