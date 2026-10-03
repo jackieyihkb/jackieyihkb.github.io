@@ -37,8 +37,10 @@ header:
         From February 2024 to August 2026 I was a <strong>joint postdoctoral
         fellow</strong> of HKUST and the Guangzhou Marine Laboratory, supervised by
         <a href="https://longjunwulab.org/">Prof. Longjun Wu</a> (Department of
-        Ocean Science, HKUST) and Prof. Pei-Yuan Qian; before that I worked at the
-        Reproductive Medicine Centre of Shenzhen Second People&rsquo;s Hospital.
+        Ocean Science, HKUST) and
+        <a href="https://qianlab.hkust.edu.hk/">Prof. Pei-Yuan Qian</a>; before that
+        I worked at the Reproductive Medicine Centre of Shenzhen Second
+        People&rsquo;s Hospital.
       </p>
       <p>
         My work sits where <strong>bioinformatics</strong>, <strong>comparative
@@ -67,32 +69,6 @@ header:
         <a class="btn btn--info" href="https://orcid.org/0000-0003-4286-6411">ORCID</a>
       </p>
     </div>
-  </div>
-</section>
-
-<section class="home-section" markdown="0">
-  <h2>Postdoctoral supervisors</h2>
-  <div class="card-grid">
-    <article class="card">
-      <p class="card-kicker">HKUST &middot; WU LAB</p>
-      <h3><a href="https://longjunwulab.org/">Prof. Longjun Wu</a></h3>
-      <p>
-        Marine evolutionary developmental biology. His lab works on the
-        evolutionary and ecological mechanisms that generate and maintain marine
-        biodiversity, mostly in understudied invertebrates &mdash; cnidarians,
-        molluscs and zooplankton &mdash; including adaptation to the deep sea.
-      </p>
-    </article>
-    <article class="card">
-      <p class="card-kicker">HKUST &middot; QIAN&rsquo;S LAB</p>
-      <h3><a href="https://qianlab.hkust.edu.hk/">Prof. Pei-Yuan Qian</a></h3>
-      <p>
-        Larval biology of marine invertebrates. His lab studies how settling
-        larvae read chemical cues from marine biofilms, and the microbial
-        metagenomics of extreme habitats such as deep-sea brine pools, corals and
-        sponges.
-      </p>
-    </article>
   </div>
 </section>
 
