@@ -287,15 +287,14 @@ a:focus {
   margin-bottom: 1em;
 }
 
+/* Grid rather than flex: the two columns keep a fixed proportion of the
+   (up to 1280px) content width instead of letting the text column swallow all
+   the leftover space and run to ~110 characters per line. */
 .about-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2.5em;
-  align-items: flex-start;
-}
-
-.about-photo {
-  flex: 0 0 300px;
+  display: grid;
+  grid-template-columns: minmax(280px, 44%) minmax(300px, 1fr);
+  gap: 2.5em 3em;
+  align-items: start;
 }
 
 .about-photo img {
@@ -307,8 +306,7 @@ a:focus {
 }
 
 .about-text {
-  flex: 1 1 340px;
-  min-width: 280px;
+  min-width: 0;
 }
 
 .stat-row {
@@ -547,25 +545,21 @@ a:focus {
     column-count: 2;
     column-gap: 0.5em;
   }
+
+  /* below this width the two about columns can no longer hold their minimums */
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5em;
+  }
+
+  .about-photo {
+    max-width: 420px;
+  }
 }
 
 /* --- Small screens ------------------------------------------------------- */
 
 @media screen and (max-width: 37.5em) {
-  .about-grid {
-    gap: 1.5em;
-  }
-
-  /* a wide photo reads better stacked above the text on narrow screens */
-  .about-photo {
-    flex: 1 1 100%;
-  }
-
-  .about-photo img {
-    width: 100%;
-    max-width: 420px;
-  }
-
   .timeline li,
   .news-list li,
   .contact-list li {
