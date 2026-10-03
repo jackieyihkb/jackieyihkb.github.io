@@ -287,31 +287,24 @@ a:focus {
   margin-bottom: 1em;
 }
 
-/* Grid rather than flex: the two columns keep a fixed proportion of the
-   (up to 1280px) content width instead of letting the text column swallow all
-   the leftover space and run to ~110 characters per line. */
+/* Fixed 300x300 avatar next to a readable text column. The text column is capped
+   so the space freed by the smaller photo does not turn back into a 900px-wide
+   paragraph. */
 .about-grid {
   display: grid;
-  /* 36% instead of 44%: at 44% the photo became a near-square block that
-     visually outweighed the text. The text column is capped so shrinking the
-     photo does not just hand the space back to a 900px-wide paragraph. */
-  grid-template-columns: minmax(260px, 36%) minmax(300px, 700px);
+  grid-template-columns: 300px minmax(300px, 700px);
   gap: 2.5em 3em;
-  /* stretch so the portrait column ends level with the text, whatever its height */
-  align-items: stretch;
+  align-items: start;
 }
 
-.about-photo {
-  display: flex;
-}
-
-/* The photo fills the column and is cropped rather than squashed. The source is
-   4:3 and the slot is always taller than that, so cover only ever trims the
-   left/right edges - the vertical framing is untouched and the subject sits
-   near the horizontal centre, so `center` keeps them in shot. */
+/* Square avatar. The file is already a square crop centred on the face, so
+   `cover` has nothing left to trim; aspect-ratio + max-width let it shrink
+   gracefully on very narrow screens without distorting. */
 .about-photo img {
-  width: 100%;
-  height: 100%;
+  width: 300px;
+  max-width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 1;
   object-fit: cover;
   object-position: center;
   border: 1px solid $sea-line;
@@ -581,17 +574,6 @@ a:focus {
     grid-template-columns: 1fr;
     gap: 1.5em;
     align-items: start;
-  }
-
-  /* once stacked there is no height to match, so show the photo uncropped */
-  .about-photo {
-    display: block;
-    max-width: 420px;
-  }
-
-  .about-photo img {
-    height: auto;
-    object-fit: fill;
   }
 }
 
