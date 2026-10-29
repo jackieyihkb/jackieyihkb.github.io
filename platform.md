@@ -68,7 +68,6 @@ lead: >-
 </ul>
 
 <p class="db-footnote">
-  Earlier resources — HpeNet, croFGD and PNRD — remain online and are listed
-  with their papers on the
+  Earlier resources remain online and are linked from their papers on the
   <a href="{{ '/publications.html' | relative_url }}">publications page</a>.
 </p>
