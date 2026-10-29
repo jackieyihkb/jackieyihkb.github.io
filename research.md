@@ -1,99 +1,91 @@
 ---
 title: Research
-classes:
-  - wide
-  - fullwidth
-  - page-research
+lead: >-
+  I study how genomes and transcriptomes from poorly characterised organisms
+  can be turned into resources that support comparative and functional biology.
 ---
 
-My research is about turning sequencing data into resources that other people can
-use. I work on **deep-ocean multi-omics**, on **plant functional genomics
-databases**, and on **epitranscriptomics in reproductive disease** &mdash; three
-areas that look unrelated until you notice that all of them are really about
-integrating heterogeneous data and making it queryable.
+My work is organised around a single practical question: how do we make
+heterogeneous sequencing data useful to people who did not generate them? That
+question has taken me from deep-sea animals to crop and medicinal plants, and
+from plant immunity to human reproductive disease. In each case the output is
+the same kind of object: a curated, searchable resource with the analysis tools
+built in.
 
-## Deep-ocean multi-omics
+## Deep-ocean genomics and adaptation
 
-### DOO &mdash; Deep Ocean Omics
+The deep ocean is the largest and least explored habitat on Earth. Organisms
+there have evolved under high pressure, permanent darkness and severe nutrient
+limitation, and their genomes carry the record of those adaptations. Until
+recently, however, deep-sea omics data were scattered across supplementary
+tables and one-off repositories.
 
-The deep ocean covers most of the planet and is still largely unexplored. In the
-past few years, omics data from deep-sea organisms have grown fast, but they were
-scattered across hundreds of supplementary tables and one-off repositories. With
-Prof. Pei-Yuan Qian and Prof. Longjun Wu we built **DOO**, a centralised
-multi-omics atlas for deep-ocean organisms
-([**She** et al., 2026](https://doi.org/10.1093/nar/gkaf1096);
-[Nucleic Acids Research](https://doi.org/10.1093/nar/gkaf1096) Database Issue).
+With Prof. Pei-Yuan Qian and Prof. Longjun Wu, I built **DOO (Deep Ocean
+Omics)**, a centralised multi-omics atlas for deep-ocean organisms. DOO
+integrates 68 species across seven phyla: 72 genomes, 950 bulk transcriptomes,
+15 single-cell transcriptomes and 1,112 metagenomes, together with comparative
+and functional analysis toolkits. For each genome it exposes assembly
+statistics, phylogeny, gene annotation, BUSCO completeness, transcription
+factors, gene clusters, symbiont and mitochondrial genomes, and fossil records.
+The resource was published as a first-author paper in the *Nucleic Acids
+Research* Database Issue ([She et al., 2026](https://doi.org/10.1093/nar/gkaf1096)).
 
-DOO currently integrates **68 species across seven phyla and 16 classes**:
-72 genomes, 950 bulk transcriptomes, 15 single-cell transcriptomes and 1,112
-metagenomes, together with analysis toolkits. For every genome it exposes
-assembly statistics, phylogeny, gene annotation, BUSCO completeness, transcription
-factors and ubiquitin-family genes, gene clusters, symbiont and mitochondrial
-genomes, and fossil records.
+**CnidoSite** extends the same approach to cnidarians, the lineage that includes
+corals, sea anemones and jellyfish. It is a multi-omics database designed to
+make genomic and transcriptomic data from this group comparable across species
+([She et al., 2026](https://doi.org/10.64898/2026.10.15.758670), preprint).
 
-**Browse it:** [DeepOceanOmics.org](https://DeepOceanOmics.org)
+Earlier work in this area looked at adaptation across deep-sea lineages rather
+than one species at a time. Phylogenetic analysis placed the divergence of
+deep-sea and shallow-water species more than 300 million years ago, and
+positive-selection scans pointed to heat-shock proteins, ABC and amino-acid
+transporters, and transmembrane pattern-recognition receptors as genes that
+helped deep-sea organisms recognise and acquire symbionts from the surrounding
+environment.
 
-### Deep-sea adaptation and host&ndash;symbiont evolution
+## Plant functional genomics
 
-Earlier work in this area looked at adaptation across many deep-sea lineages
-rather than one species at a time. Phylogenetic analysis of deep-sea and
-shallow-water species put their divergence more than 300 million years ago, and
-positive-selection scans pointed at heat-shock proteins, transporter proteins
-(ABC and amino-acid transporters) and transmembrane pattern-recognition receptors
-as the genes that helped deep-sea organisms recognise and acquire their symbionts
-from the surrounding environment.
+Crop and medicinal-plant genomics is where I started, and the databases from
+that period are still online and still used.
 
-## Plant functional genomics databases
+- **TomAP** integrates co-expression networks with defined chromatin states, so
+  that co-expressed tomato genes can be examined together with their chromatin
+  context and compared with orthologues in other species
+  ([Cao, She et al., 2024](https://doi.org/10.1016/j.ncrops.2023.10.001)).
+- **HpeNet** is a co-expression network database for herbaceous peony, built
+  from 40 in-house RNA-seq datasets across 10 tissues and a *de novo*
+  transcriptome assembly ([Sheng, She et al., 2020](https://doi.org/10.3389/fgene.2020.570138)).
+- **croFGD** is a functional genomics database for *Catharanthus roseus*, the
+  source of monoterpene indole alkaloids. It combines a co-expression network
+  with network search, gene-family, KEGG, GO and miRNA annotation
+  ([She et al., 2019](https://doi.org/10.3389/fgene.2019.00238)).
+- **PNRD**, the plant non-coding RNA database, was upgraded to 924,127 entries
+  of 14 ncRNA types from 221 species, with miRNA target predictions extended to
+  900,771 pairs in 57 species.
+- **WheatCENet** and **AppleMDO** apply the same co-expression framework to
+  allohexaploid wheat and apple, respectively.
 
-Crop and medicinal-plant genomics was where I started, and the databases from that
-period are still online and still used.
+## Epitranscriptomics and reproductive disease
 
-- **TomAP &mdash; tomato multi-omics analysis platform.** Tomato is the second most
-  important vegetable crop worldwide and a model for fruit ripening and disease
-  resistance, yet the function of most of its genes is unknown. TomAP integrates
-  co-expression networks with defined chromatin states so that co-expressed genes
-  can be examined together with the chromatin context, and orthologues compared
-  across species
-  ([Cao, **She** et al., 2024](https://doi.org/10.1016/j.ncrops.2023.10.001)).
-  [Launch TomAP](http://bioinformatics.cau.edu.cn/TomAP/)
+In parallel, I have worked on the molecular basis of reproductive disorders,
+where the same data-integration problem appears in a clinical setting.
 
-- **HpeNet &mdash; herbaceous peony co-expression network.** We produced 40 in-house
-  RNA-seq datasets from 10 tissues and assembled the transcriptome *de novo*, then
-  built a co-expression network database with BLAST, expression profiling and GSEA
-  support
-  ([Sheng, **She** et al., 2020](https://doi.org/10.3389/fgene.2020.570138)).
-  [Launch HpeNet](https://bioinformatics.cau.edu.cn/HpeNet/)
+We mapped the transcriptome-wide m<sup>6</sup>A profile of human villi in first-trimester
+spontaneous abortion using MeRIP-seq and RNA-seq, and followed up candidate
+genes through *IGFBP3* and C/EBPβ, a marker of endometrial receptivity
+([She et al., 2022](https://doi.org/10.3389/fgene.2022.861853)). In
+endometriosis, we combined a random forest with an artificial neural network to
+identify seven differentially expressed genes with diagnostic signal, and
+validated the model on public datasets
+([She et al., 2022](https://doi.org/10.3389/fgene.2022.848116)). Related work
+includes prognostic lncRNA models for endometrial cancer and the role of FKBP38
+in premature ovarian insufficiency through mTOR signalling.
 
-- **croFGD &mdash; *Catharanthus roseus* functional genomics database.** *C. roseus*
-  produces monoterpene indole alkaloids derived from secologanin and tryptamine.
-  Starting from transcriptomic datasets we built a co-expression network and added
-  network search, comparison and analysis, plus gene-family, KEGG, GO and miRNA
-  annotation ([**She** et al., 2019](https://doi.org/10.3389/fgene.2019.00238)).
-  [Launch croFGD](http://bioinformatics.cau.edu.cn/croFGD/)
+## Databases that outlive the paper
 
-- **PNRD &mdash; plant non-coding RNA database, maintenance and upgrade.** Building
-  on [PNRD](http://structuralbiology.cau.edu.cn/PNRD/)
-  ([Yi et al., 2014](https://doi.org/10.1093/nar/gku1162)), we collected
-  **924,127 entries** of 14 ncRNA types from **221 plant species**, extended miRNA
-  target predictions to **900,771 pairs** in 57 species, and grew the number of
-  miRNA expression profiles to **142** across 47 species.
-
-## Epitranscriptomics in reproductive disease
-
-### m⁶A modification in early pregnancy loss
-
-We performed high-throughput sequencing of villous tissue from first-trimester
-spontaneous abortions and from induced-abortion controls, and mapped the
-transcriptome-wide m⁶A profile of human villi in early spontaneous abortion.
-Joint analysis of MeRIP-seq and RNA-seq data identified candidate genes involved
-in the process; we followed up the mechanism through *IGFBP3* (insulin-like growth
-factor binding protein) and C/EBP&beta;, a marker of endometrial receptivity
-([**She** et al., 2022](https://doi.org/10.3389/fgene.2022.861853)).
-
-### Machine learning for endometriosis diagnosis
-
-Endometriosis is commonly diagnosed late. Combining a random forest with an
-artificial neural network, we identified seven differentially expressed genes that
-carry diagnostic signal, then validated the model on public datasets
-([**She** et al., 2022](https://doi.org/10.3389/fgene.2022.848116)). The model is
-a step towards a molecular test that could shorten the diagnostic delay.
+A paper describes a result once; a database keeps answering questions for years.
+I build resources so that a biologist with no programming background can get an
+answer without emailing me first. In practice this means reproducible pipelines,
+documented interfaces, stable identifiers and versioned releases. It is the
+unglamorous half of the work, and the half that determines whether a resource is
+still useful five years later.

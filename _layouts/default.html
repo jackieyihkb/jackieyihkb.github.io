@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  {%- assign page_title = page.title | default: site.title -%}
+  {%- if page.url == '/' -%}
+    {%- assign full_title = site.title | append: ' — Bioinformatics & Deep-Sea Genomics' -%}
+  {%- else -%}
+    {%- assign full_title = page_title | append: ' · ' | append: site.title -%}
+  {%- endif -%}
+  {%- assign meta_description = page.lead | default: page.description | default: site.description -%}
+
+  <title>{{ full_title }}</title>
+  <meta name="description" content="{{ meta_description | strip_html | strip_newlines | escape }}">
+  <link rel="canonical" href="{{ page.url | absolute_url }}">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="{{ site.title }}">
+  <meta property="og:title" content="{{ full_title }}">
+  <meta property="og:description" content="{{ meta_description | strip_html | strip_newlines | escape }}">
+  <meta property="og:url" content="{{ page.url | absolute_url }}">
+  <meta property="og:image" content="{{ '/assets/images/social-card.png' | absolute_url }}">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#fbfaf7">
+
+  <link rel="icon" href="{{ '/assets/images/favicon.svg' | relative_url }}" type="image/svg+xml">
+  <link rel="icon" href="{{ '/assets/images/favicon-32.png' | relative_url }}" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="{{ '/assets/images/apple-touch-icon.png' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Jiajie She",
+    "alternateName": "佘加杰",
+    "url": "{{ '/' | absolute_url }}",
+    "jobTitle": "Lecturer",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Shenzhen Polytechnic University"
+    },
+    "sameAs": [
+      "https://orcid.org/0000-0003-4286-6411",
+      "https://scholar.google.com.hk/citations?user=I4Rl5BMAAAAJ",
+      "https://github.com/jackieyihkb",
+      "https://www.researchgate.net/profile/Jiajie-She",
+      "https://www.scopus.com/authid/detail.uri?authorId=56545171200"
+    ]
+  }
+  </script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="site-name" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+      <nav class="site-nav" aria-label="Main navigation">
+        {%- for item in site.data.navigation.main %}
+        <a href="{{ item.url | relative_url }}"{% if page.url == item.url %} class="active" aria-current="page"{% endif %}>{{ item.title }}</a>
+        {%- endfor %}
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="wrap">
+    {{ content }}
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <p class="footer-identity">
+        © {{ site.time | date: "%Y" }} Jiajie She ·
+        Last updated {{ site.time | date: "%B %Y" }}
+      </p>
+      <p class="footer-links">
+        <a href="mailto:{{ site.author.email }}">Email</a>
+        <a href="{{ site.author.scholar }}">Google Scholar</a>
+        <a href="https://orcid.org/{{ site.author.orcid }}">ORCID</a>
+        <a href="{{ site.author.github }}">GitHub</a>
+      </p>
+    </div>
+  </footer>
+</body>
+</html>

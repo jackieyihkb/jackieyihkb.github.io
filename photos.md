@@ -1,15 +1,10 @@
 ---
 title: Gallery
-classes:
-  - wide
-  - fullwidth
-  - page-photos
+lead: Lab life during my postdoc, fieldwork, and a few trips in between.
 ---
 
-Lab life during my postdoc, and photos from trips and fieldwork. This page reads
-the `assets/photos/` folder in the repository directly, so adding a picture never
-means editing anything here &mdash; drop the file in and it shows up on the next
-build. Click any photo to open it full size.
+Photographs from the Department of Ocean Science at HKUST and from fieldwork and
+travel between 2024 and 2026. Click any image to open it full size.
 
 {%- assign exts = ".jpg,.jpeg,.png,.webp,.gif" -%}
 {%- assign lab_n = 0 -%}
@@ -30,24 +25,20 @@ build. Click any photo to open it full size.
 {% if lab_n > 0 %}
 ## Lab life
 
-WU LAB, Department of Ocean Science, HKUST &mdash; {{ lab_n }} photos from
-2024&ndash;2026.
+WU LAB, Department of Ocean Science, HKUST — {{ lab_n }} photographs from
+2024–2026.
 
 {% include photo_grid.html section="lab" %}
 {% endif %}
 
 {% if own_n > 0 %}
-## Trips, fieldwork and everything else
+## Trips and fieldwork
 
-{{ own_n }} photos.
+{{ own_n }} photographs.
 
 {% include photo_grid.html section="own" %}
 {% endif %}
 
 {% if lab_n == 0 and own_n == 0 %}
-<div class="notice--info" markdown="1">
-**No photos here yet.** Put image files into `assets/photos/` (or
-`assets/photos/lab/`) and they will appear on this page the next time the site is
-built.
-</div>
+<p class="note">No photographs have been added yet.</p>
 {% endif %}

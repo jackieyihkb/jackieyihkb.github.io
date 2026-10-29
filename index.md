@@ -1,187 +1,169 @@
 ---
-title: "Deep-ocean multi-omics"
-excerpt: >-
-  I build databases and analysis platforms that make sense of genomes nobody has
-  looked at yet — from the deep sea to crops and to human reproduction.
-layout: splash
-classes:
-  - landing
-  - dark-theme
-header:
-  overlay_color: "#082c49"
-  overlay_image: /assets/images/campus-hero.jpg
-  overlay_filter: 0.25
-  # keep the designed card for link previews instead of the raw photo
-  og_image: /assets/images/social-card.png
-  actions:
-    - label: "Selected publications"
-      url: "/publications.html"
-    - label: "Databases"
-      url: "/platform.html"
-    - label: "Contact"
-      url: "/contact.html"
-  caption: "Xilihu Campus · Shenzhen Polytechnic University"
+layout: home
 ---
 
-<section class="home-section home-about" markdown="0">
-  <div class="about-grid">
-    <div class="about-photo">
-      <img src="/assets/images/about-photo.jpg" alt="Jiajie She on a coastal hike above the sea">
-    </div>
-    <div class="about-text">
-      <h2>About me</h2>
-      <p>
-        I am a <strong>Lecturer</strong> at the
-        <a href="https://fd.szpu.edu.cn/">School of Food and Drug</a>,
-        <a href="https://www.szpu.edu.cn/">Shenzhen Polytechnic University</a>.
-        From February 2024 to August 2026 I was a <strong>joint postdoctoral
-        fellow</strong> of HKUST and the Guangzhou Marine Laboratory, supervised by
-        <a href="https://longjunwulab.org/">Prof. Longjun Wu</a> (Department of
-        Ocean Science, HKUST) and
-        <a href="https://qianlab.hkust.edu.hk/">Prof. Pei-Yuan Qian</a>; before that
-        I worked at the Reproductive Medicine Centre of Shenzhen Second
-        People&rsquo;s Hospital.
-      </p>
-      <p>
-        My work sits where <strong>bioinformatics</strong>, <strong>comparative
-        genomics</strong> and <strong>database engineering</strong> meet. The deep
-        ocean is the largest and least explored habitat on Earth, and the organisms
-        living there have evolved under high pressure, permanent darkness and
-        severe nutrient limitation. I turn the growing pile of deep-sea omics data
-        into resources that other people can actually use &mdash; genomes,
-        co-expression networks, single-cell and metagenome collections, all wired
-        together behind one search box and one set of analysis tools.
-      </p>
-      <p>
-        I care a lot about the unglamorous half of this work: reproducible
-        pipelines, clean interfaces, documentation that lets a wet-lab biologist
-        get an answer without emailing me first.
-      </p>
-      <ul class="stat-row">
-        <li><span class="stat-number">22</span><span class="stat-label">SCI papers</span></li>
-        <li><span class="stat-number">10</span><span class="stat-label">first / co-first author</span></li>
-        <li><span class="stat-number">500+</span><span class="stat-label">citations</span></li>
-        <li><span class="stat-number">2</span><span class="stat-label">patents granted</span></li>
-      </ul>
-      <p class="link-row">
-        <a class="btn btn--info" href="/publications.html">Publications</a>
-        <a class="btn btn--info" href="https://scholar.google.com.hk/citations?user=I4Rl5BMAAAAJ">Google Scholar</a>
-        <a class="btn btn--info" href="https://orcid.org/0000-0003-4286-6411">ORCID</a>
-      </p>
-    </div>
+<section class="home-intro">
+  <div class="intro-text">
+    <h1>Jiajie She <span class="name-cn">佘加杰</span></h1>
+
+    <p class="intro-role">
+      <strong>Lecturer</strong>, School of Food and Drug<br>
+      Shenzhen Polytechnic University · Shenzhen, China
+    </p>
+
+    <p class="bio-lead">
+      I am a bioinformatician working at the intersection of comparative
+      genomics, deep-sea biology and database engineering. I build multi-omics
+      resources that turn difficult genomes into tools other people can use.
+    </p>
+
+    <p>
+      My research spans deep-ocean genomics and adaptation, the functional
+      genomics of crop and medicinal plants, and epitranscriptomics in
+      reproductive disease. The common problem across these areas is
+      heterogeneous sequencing data: scattered, unevenly annotated and hard to
+      query. A large part of my work goes into making such data searchable,
+      comparable and reproducible.
+    </p>
+
+    <p>
+      I was previously a joint postdoctoral fellow at the Hong Kong University
+      of Science and Technology and the Guangzhou Marine Laboratory, and before
+      that a postdoctoral researcher at the Reproductive Medicine Centre of
+      Shenzhen Second People's Hospital. I received my PhD in Bioinformatics
+      from China Agricultural University in 2020. My work has appeared in
+      <em>Nucleic Acids Research</em>, <em>National Science Review</em>,
+      <em>Molecular Plant</em> and <em>The Plant Cell</em>.
+    </p>
+
+    <ul class="intro-links">
+      <li><a href="mailto:jiajie@szpu.edu.cn">Email</a></li>
+      <li><a href="https://scholar.google.com.hk/citations?user=I4Rl5BMAAAAJ">Google Scholar</a></li>
+      <li><a href="https://orcid.org/0000-0003-4286-6411">ORCID</a></li>
+      <li><a href="https://github.com/jackieyihkb">GitHub</a></li>
+      <li><a href="https://www.researchgate.net/profile/Jiajie-She">ResearchGate</a></li>
+    </ul>
   </div>
+
+  <figure class="portrait">
+    <img src="{{ '/assets/images/about-photo.jpg' | relative_url }}"
+         alt="Portrait of Jiajie She">
+  </figure>
 </section>
 
-<section class="home-section" markdown="0">
-  <h2>Research highlights</h2>
-  <div class="card-grid">
-    <article class="card card--feature">
-      <p class="card-kicker">Nucleic Acids Research · 2026</p>
-      <h3>DOO: a multi-omics atlas for the deep ocean</h3>
-      <p>
-        First-author paper in the <em>NAR</em> Database Issue. DOO gathers 72 genomes,
-        950 bulk transcriptomes, 15 single-cell transcriptomes and 1,112 metagenomes
-        from 68 species across seven phyla into one queryable resource for deep-ocean
-        biology.
-      </p>
-      <p class="card-links">
-        <a href="https://doi.org/10.1093/nar/gkaf1096">Paper</a>
-        <a href="https://DeepOceanOmics.org">Browse DOO</a>
-      </p>
-    </article>
-    <article class="card">
-      <p class="card-kicker">Databases</p>
-      <h3>Resources that outlive the paper</h3>
-      <p>
-        Deep Ocean Omics, TomAP, HpeNet, croFGD, PNRD &mdash; a series of multi-omics
-        platforms where co-expression networks, chromatin states, gene families and
-        functional annotation are integrated, searchable and kept online.
-      </p>
-      <p class="card-links">
-        <a href="/platform.html">See all databases</a>
-      </p>
-    </article>
-    <article class="card">
-      <p class="card-kicker">Methods</p>
-      <h3>From sequence to clinical and evolutionary signal</h3>
-      <p>
-        Machine-learning models for endometriosis diagnosis, transcriptome-wide m<sup>6</sup>A
-        mapping in early pregnancy loss, and positive-selection scans that trace how
-        deep-sea lineages acquired their symbionts.
-      </p>
-      <p class="card-links">
-        <a href="/research.html">Read the research</a>
-      </p>
-    </article>
-  </div>
-</section>
-
-<section class="home-section" markdown="0">
-  <h2>News</h2>
-  <ul class="news-list">
-    <li>
-      <span class="news-date">2026</span>
-      <span class="news-body">Joined the School of Food and Drug, Shenzhen Polytechnic University, as a Lecturer.</span>
-    </li>
-    <li>
-      <span class="news-date">2026</span>
-      <span class="news-body">Co-author on the Portuguese man-of-war genome paper in <em>National Science Review</em>, on the genetic basis of medusa loss and sea&ndash;air interface adaptation.</span>
-    </li>
-    <li>
-      <span class="news-date">2025</span>
-      <span class="news-body"><strong>DOO: integrated multi-omics resources for deep ocean organisms</strong> published in <em>Nucleic Acids Research</em> (Database Issue) as first author.</span>
-    </li>
+<section class="section">
+  <h2 class="section-title">Research interests</h2>
+  <ul class="interests">
+    <li>Deep-ocean genomics and adaptation</li>
+    <li>Multi-omics database construction</li>
+    <li>Comparative and functional genomics</li>
+    <li>Epitranscriptomics in reproductive disease</li>
   </ul>
 </section>
 
-<section class="home-section" markdown="0">
-  <h2>Experience</h2>
-  <ul class="timeline">
-    <li>
-      <span class="timeline-when">2026 &ndash; now</span>
-      <span class="timeline-what">
-        <strong>Lecturer</strong>, School of Food and Drug, Shenzhen Polytechnic University
-      </span>
+<section class="section">
+  <h2 class="section-title">Selected publications</h2>
+  <ol class="pub-list">
+    <li class="pub-item">
+      <span class="pub-authors">She J, Qian P-Y, Wu L.</span>
+      <span class="pub-title">DOO: integrated multi-omics resources for deep ocean organisms.</span>
+      <em class="pub-venue">Nucleic Acids Research</em>,
+      <span class="pub-detail">54(D1): D1031–D1045, 2026.</span>
+      <span class="pub-tag">First author</span>
+      <a href="https://doi.org/10.1093/nar/gkaf1096">DOI</a>
     </li>
-    <li>
-      <span class="timeline-when">Feb 2024 &ndash; Aug 2026</span>
-      <span class="timeline-what">
-        <strong>Joint Postdoctoral Fellow</strong> &mdash; HKUST and the
-        Guangzhou Marine Laboratory (GML)<br>
-        <span class="timeline-note">
-          <a href="https://longjunwulab.org/">WU LAB</a>, Department of Ocean Science,
-          HKUST &middot; supervisors Prof. Longjun Wu and Prof. Pei-Yuan Qian
-        </span>
-      </span>
+    <li class="pub-item">
+      <span class="pub-authors">Wang F, Li Y, Liu Y, … She J, … Dong Z.</span>
+      <span class="pub-title">The Portuguese man-of-war genome reveals the genetic basis of medusa loss and sea–air interface adaptation.</span>
+      <em class="pub-venue">National Science Review</em>,
+      <span class="pub-detail">13(17): nwag374, 2026.</span>
+      <a href="https://doi.org/10.1093/nsr/nwag374">DOI</a>
     </li>
-    <li>
-      <span class="timeline-when">2020 &ndash; 2023</span>
-      <span class="timeline-what">
-        <strong>Postdoctoral Researcher</strong>, Reproductive Medicine Centre,
-        Shenzhen Second People&rsquo;s Hospital
-      </span>
+    <li class="pub-item">
+      <span class="pub-authors">Cao Y<sup>†</sup>, She J<sup>†</sup>, Li Z<sup>†</sup>, … Su Z.</span>
+      <span class="pub-title">TomAP: a multi-omics data analysis platform for advancing functional genomics research in tomatoes.</span>
+      <em class="pub-venue">New Crops</em>,
+      <span class="pub-detail">1: 100002, 2024.</span>
+      <span class="pub-tag">Co-first author</span>
+      <a href="https://doi.org/10.1016/j.ncrops.2023.10.001">DOI</a>
     </li>
-    <li>
-      <span class="timeline-when">2015 &ndash; 2020</span>
-      <span class="timeline-what">
-        <strong>PhD in Bioinformatics</strong>, China Agricultural University, Beijing
-      </span>
+    <li class="pub-item">
+      <span class="pub-authors">She J, Yan H, Yang J, Xu W, Su Z.</span>
+      <span class="pub-title">croFGD: <em>Catharanthus roseus</em> functional genomics database.</span>
+      <em class="pub-venue">Frontiers in Genetics</em>,
+      <span class="pub-detail">10: 238, 2019.</span>
+      <span class="pub-tag">First author</span>
+      <a href="https://doi.org/10.3389/fgene.2019.00238">DOI</a>
     </li>
-    <li>
-      <span class="timeline-when">2011 &ndash; 2015</span>
-      <span class="timeline-what">
-        <strong>BSc</strong>, Chongqing University of Posts and Telecommunications
-      </span>
+    <li class="pub-item">
+      <span class="pub-authors">She J, Su D, Diao R, Wang L.</span>
+      <span class="pub-title">A joint model of random forest and artificial neural network for the diagnosis of endometriosis.</span>
+      <em class="pub-venue">Frontiers in Genetics</em>,
+      <span class="pub-detail">13: 848116, 2022.</span>
+      <span class="pub-tag">First author</span>
+      <a href="https://doi.org/10.3389/fgene.2022.848116">DOI</a>
     </li>
-  </ul>
-</section>
-
-<section class="home-section home-contact" markdown="0">
-  <h2>Get in touch</h2>
-  <p class="link-row">
-    <a class="btn btn--info" href="mailto:jiajie@szpu.edu.cn">Email</a>
-    <a class="btn btn--info" href="https://github.com/jackieyihkb">GitHub</a>
-    <a class="btn btn--info" href="https://www.researchgate.net/profile/Jiajie-She">ResearchGate</a>
-    <a class="btn btn--info" href="https://www.scopus.com/authid/detail.uri?authorId=56545171200">Scopus</a>
+    <li class="pub-item">
+      <span class="pub-authors">She J, Tan K, Liu J, … Diao R, Wang L.</span>
+      <span class="pub-title">The alteration of m<sup>6</sup>A modification at the transcriptome-wide level in human villi during spontaneous abortion in the first trimester.</span>
+      <em class="pub-venue">Frontiers in Genetics</em>,
+      <span class="pub-detail">13: 861853, 2022.</span>
+      <span class="pub-tag">First author</span>
+      <a href="https://doi.org/10.3389/fgene.2022.861853">DOI</a>
+    </li>
+  </ol>
+  <p class="small">
+    <a href="{{ '/publications.html' | relative_url }}">Full publication list (21 papers and preprints) →</a>
   </p>
+</section>
+
+<section class="section">
+  <h2 class="section-title">News</h2>
+  <ul class="news-list">
+    <li class="news-item">
+      <span class="news-date">Oct 2026</span>
+      <span>CnidoSite, a multi-omics database for cnidarians, is posted as a preprint on bioRxiv.</span>
+    </li>
+    <li class="news-item">
+      <span class="news-date">Jun 2026</span>
+      <span>Our paper on the Portuguese man-of-war genome, covering medusa loss and sea–air interface adaptation, is published in <em>National Science Review</em>.</span>
+    </li>
+    <li class="news-item">
+      <span class="news-date">2026</span>
+      <span>I joined the School of Food and Drug, Shenzhen Polytechnic University, as a Lecturer.</span>
+    </li>
+    <li class="news-item">
+      <span class="news-date">Oct 2025</span>
+      <span><strong>DOO: integrated multi-omics resources for deep ocean organisms</strong> is published in the <em>Nucleic Acids Research</em> Database Issue.</span>
+    </li>
+  </ul>
+</section>
+
+<section class="section">
+  <h2 class="section-title">Appointments &amp; education</h2>
+  <ul class="cv-list">
+    <li class="cv-item">
+      <span class="cv-when">2026 –</span>
+      <span><strong>Lecturer</strong>, School of Food and Drug, Shenzhen Polytechnic University</span>
+    </li>
+    <li class="cv-item">
+      <span class="cv-when">2024 – 2026</span>
+      <span>
+        <strong>Joint Postdoctoral Fellow</strong>, HKUST and Guangzhou Marine Laboratory
+        <span class="cv-note">Department of Ocean Science, HKUST · with Prof. Longjun Wu and Prof. Pei-Yuan Qian</span>
+      </span>
+    </li>
+    <li class="cv-item">
+      <span class="cv-when">2020 – 2023</span>
+      <span><strong>Postdoctoral Researcher</strong>, Reproductive Medicine Centre, Shenzhen Second People's Hospital</span>
+    </li>
+    <li class="cv-item">
+      <span class="cv-when">2015 – 2020</span>
+      <span><strong>PhD in Bioinformatics</strong>, China Agricultural University, Beijing</span>
+    </li>
+    <li class="cv-item">
+      <span class="cv-when">2011 – 2015</span>
+      <span><strong>BSc</strong>, Chongqing University of Posts and Telecommunications</span>
+    </li>
+  </ul>
 </section>

@@ -1,54 +1,78 @@
 ---
 title: Software
-main:
-
-  - title: MarkerMAG
-    image_path: assets/images/software/MarkerMAG.jpg
-    url: https://github.com/songweizhi/MarkerMAG
-    btn_label: "Learn More"
-    btn_class: "btn--info"
-    excerpt: Metagenome-assembled genomes (MAGs) have substantially extended our understanding of microbial functionality. However, 16S rRNA genes, which are commonly used in phylogenetic analysis and environmental surveys, are often missing from MAGs. MarkerMAG can link 16S rRNA genes to MAGs using paired-end sequencing reads.
-      
-
-  - title: MetaCHIP
-    image_path: assets/images/software/MeatCHIP.jpg
-    url: https://github.com/songweizhi/MetaCHIP
-    btn_label: "Learn More"
-    btn_class: "btn--info"
-    excerpt: Metagenomic datasets provide an opportunity to study horizontal gene transfer (HGT) on the level of a microbial community. However, current HGT detection methods cannot be applied to community-level datasets or require reference genomes. Here, we present MetaCHIP, a pipeline for reference-independent HGT identification at the community level.
-      
-
-  - title: Binning_refiner
-    image_path: assets/images/software/Binning_refiner.jpg
-    url: https://github.com/songweizhi/Binning_refiner
-    btn_label: "Learn More"
-    btn_class: "btn--info"
-    excerpt: Microbial genomes have recently been reconstructed from metagenomic datasets using binning approaches. Inconsistent binning results are however often observed between different binning programs, likely due to the different algorithms or statistical models used. We present Binning_refiner, a pipeline that merges the results of different binning programs. 
-  
-
-  - title: HgtSIM
-    image_path: assets/images/software/HgtSIM.jpg
-    url: https://github.com/songweizhi/HgtSIM
-    btn_label: "Learn More"
-    btn_class: "btn--info"
-    excerpt: A simulator for horizontal gene transfer (HGT) in microbial communities
-    
-
-  - title: BioSAK
-    image_path: assets/images/software/BioSAK.jpg
-    url: https://github.com/songweizhi/BioSAK
-    btn_label: "Learn More"
-    btn_class: "btn--info"
-    excerpt: A Swiss-Army-Knife for Bioinformaticians
-
-
-  - title: TreeSAK
-    image_path: assets/images/software/TreeSAK.jpg
-    url: https://github.com/songweizhi/TreeSAK
-    btn_label: "Learn More"
-    btn_class: "btn--info"
-    excerpt: A Swiss-Army-Knife for manipulating phylogenetic trees
-
+lead: >-
+  Open-source tools from the metagenomics community that I use in teaching and
+  in collaborative analyses.
 ---
 
-{% include feature_row id="main" type="left" %}
+<ul class="soft-list">
+  <li class="soft-item">
+    <div class="soft-name"><a href="https://github.com/songweizhi/MarkerMAG">MarkerMAG</a><span class="soft-kind">MAG–16S linking</span></div>
+    <div class="soft-body">
+      <p>
+        Links 16S rRNA genes to metagenome-assembled genomes using paired-end
+        sequencing reads, recovering a marker that is frequently missing from
+        MAGs but essential for phylogenetic placement.
+      </p>
+      <div class="soft-links"><a href="https://github.com/songweizhi/MarkerMAG">GitHub ↗</a></div>
+    </div>
+  </li>
+
+  <li class="soft-item">
+    <div class="soft-name"><a href="https://github.com/songweizhi/MetaCHIP">MetaCHIP</a><span class="soft-kind">Horizontal gene transfer</span></div>
+    <div class="soft-body">
+      <p>
+        A reference-independent pipeline for identifying horizontal gene transfer
+        at the community level, without requiring assembled genomes or a
+        reference database.
+      </p>
+      <div class="soft-links"><a href="https://github.com/songweizhi/MetaCHIP">GitHub ↗</a></div>
+    </div>
+  </li>
+
+  <li class="soft-item">
+    <div class="soft-name"><a href="https://github.com/songweizhi/Binning_refiner">Binning_refiner</a><span class="soft-kind">Genome binning</span></div>
+    <div class="soft-body">
+      <p>
+        Merges the results of different binning programs. Inconsistent bins are
+        common between algorithms; refining them together improves the final
+        genome recovery.
+      </p>
+      <div class="soft-links"><a href="https://github.com/songweizhi/Binning_refiner">GitHub ↗</a></div>
+    </div>
+  </li>
+
+  <li class="soft-item">
+    <div class="soft-name"><a href="https://github.com/songweizhi/HgtSIM">HgtSIM</a><span class="soft-kind">Simulation</span></div>
+    <div class="soft-body">
+      <p>
+        A simulator for horizontal gene transfer in microbial communities, used
+        to benchmark detection methods against known transfer events.
+      </p>
+      <div class="soft-links"><a href="https://github.com/songweizhi/HgtSIM">GitHub ↗</a></div>
+    </div>
+  </li>
+
+  <li class="soft-item">
+    <div class="soft-name"><a href="https://github.com/songweizhi/BioSAK">BioSAK</a><span class="soft-kind">Bioinformatics utilities</span></div>
+    <div class="soft-body">
+      <p>
+        A collection of command-line utilities for common bioinformatics tasks:
+        sequence handling, functional annotation, tree manipulation and file
+        conversion.
+      </p>
+      <div class="soft-links"><a href="https://github.com/songweizhi/BioSAK">GitHub ↗</a></div>
+    </div>
+  </li>
+
+  <li class="soft-item">
+    <div class="soft-name"><a href="https://github.com/songweizhi/TreeSAK">TreeSAK</a><span class="soft-kind">Phylogenetics</span></div>
+    <div class="soft-body">
+      <p>
+        A toolkit for manipulating phylogenetic trees, from pruning and
+        re-rooting to annotation and visualisation.
+      </p>
+      <div class="soft-links"><a href="https://github.com/songweizhi/TreeSAK">GitHub ↗</a></div>
+    </div>
+  </li>
+</ul>

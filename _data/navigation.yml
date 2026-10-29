@@ -3,9 +3,11 @@ main:
     url: /research.html
   - title: Publications
     url: /publications.html
+  - title: Databases
+    url: /platform.html
   - title: Teaching
     url: /teaching.html
-  - title: Photos
+  - title: Gallery
     url: /photos.html
   - title: Contact
     url: /contact.html
