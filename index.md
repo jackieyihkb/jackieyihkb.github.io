@@ -2,8 +2,11 @@
 layout: home
 ---
 
-<section class="home-intro">
+<section class="home-hero">
+  <div class="wrap">
+    <div class="home-intro">
   <div class="intro-text">
+    <p class="kicker">Bioinformatics · Deep-sea genomics · Multi-omics databases</p>
     <h1>Jiajie She <span class="name-cn">佘加杰</span></h1>
 
     <p class="intro-role">
@@ -43,77 +46,150 @@ layout: home
       <li><a href="https://github.com/jackieyihkb">GitHub</a></li>
       <li><a href="https://www.researchgate.net/profile/Jiajie-She">ResearchGate</a></li>
     </ul>
+
+    <ul class="intro-stats" aria-label="Research metrics">
+      <li><strong>21</strong><span>papers &amp; preprints</span></li>
+      <li><strong>596</strong><span>citations</span></li>
+      <li><strong>11</strong><span>h-index</span></li>
+      <li><strong>3</strong><span>core databases</span></li>
+    </ul>
+    <p class="stats-note">Google Scholar, October 2026</p>
   </div>
 
   <figure class="portrait">
     <img src="{{ '/assets/images/about-photo.jpg' | relative_url }}"
          alt="Portrait of Jiajie She">
   </figure>
+    </div>
+  </div>
 </section>
+
+<div class="wrap">
 
 <section class="section">
   <h2 class="section-title">Research interests</h2>
   <ul class="interests">
-    <li>Deep-ocean genomics and adaptation</li>
-    <li>Multi-omics database construction</li>
-    <li>Comparative and functional genomics</li>
-    <li>Epitranscriptomics in reproductive disease</li>
+    <li>
+      <span class="interest-num">01</span>
+      <h3>Deep-ocean genomics</h3>
+      <p>Adaptation, symbiosis and genome evolution in extreme environments.</p>
+    </li>
+    <li>
+      <span class="interest-num">02</span>
+      <h3>Multi-omics databases</h3>
+      <p>Curated resources that put comparative and functional analysis in reach.</p>
+    </li>
+    <li>
+      <span class="interest-num">03</span>
+      <h3>Comparative genomics</h3>
+      <p>From gene families and chromatin context to organismal phenotype.</p>
+    </li>
+    <li>
+      <span class="interest-num">04</span>
+      <h3>Epitranscriptomics</h3>
+      <p>m<sup>6</sup>A and RNA regulation in reproductive disease.</p>
+    </li>
+  </ul>
+</section>
+
+<section class="section">
+  <h2 class="section-title">Core databases</h2>
+  <ul class="home-db-list">
+    <li>
+      <a href="https://DeepOceanOmics.org">
+        <span class="home-db-name">DOO</span>
+        <span class="home-db-desc">Deep Ocean Omics</span>
+        <span class="home-db-arrow" aria-hidden="true">↗</span>
+      </a>
+    </li>
+    <li>
+      <a href="https://cnidosite.org">
+        <span class="home-db-name">CnidoSite</span>
+        <span class="home-db-desc">Cnidarian multi-omics</span>
+        <span class="home-db-arrow" aria-hidden="true">↗</span>
+      </a>
+    </li>
+    <li>
+      <a href="https://bioinformatics.cau.edu.cn/TomAP/">
+        <span class="home-db-name">TomAP</span>
+        <span class="home-db-desc">Tomato multi-omics</span>
+        <span class="home-db-arrow" aria-hidden="true">↗</span>
+      </a>
+    </li>
   </ul>
 </section>
 
 <section class="section">
   <h2 class="section-title">Selected publications</h2>
   <ol class="pub-list">
-    <li class="pub-item">
-      <span class="pub-authors">She J, Qian P-Y, Wu L.</span>
-      <span class="pub-title">DOO: integrated multi-omics resources for deep ocean organisms.</span>
-      <em class="pub-venue">Nucleic Acids Research</em>,
-      <span class="pub-detail">54(D1): D1031–D1045, 2026.</span>
-      <span class="pub-tag">First author</span>
-      <a href="https://doi.org/10.1093/nar/gkaf1096">DOI</a>
+    <li class="pub-item pub-item--feature">
+      <span class="pub-year-mark">2026</span>
+      <div class="pub-content">
+        <span class="pub-authors">She J, Qian P-Y, Wu L.</span>
+        <span class="pub-title">DOO: integrated multi-omics resources for deep ocean organisms.</span>
+        <em class="pub-venue">Nucleic Acids Research</em>,
+        <span class="pub-detail">54(D1): D1031–D1045.</span>
+        <span class="pub-tag">First author</span>
+        <a href="https://doi.org/10.1093/nar/gkaf1096">DOI</a>
+      </div>
     </li>
     <li class="pub-item">
-      <span class="pub-authors">Wang F, Li Y, Liu Y, … She J, … Dong Z.</span>
-      <span class="pub-title">The Portuguese man-of-war genome reveals the genetic basis of medusa loss and sea–air interface adaptation.</span>
-      <em class="pub-venue">National Science Review</em>,
-      <span class="pub-detail">13(17): nwag374, 2026.</span>
-      <a href="https://doi.org/10.1093/nsr/nwag374">DOI</a>
+      <span class="pub-year-mark">2026</span>
+      <div class="pub-content">
+        <span class="pub-authors">Wang F, Li Y, Liu Y, … She J, … Dong Z.</span>
+        <span class="pub-title">The Portuguese man-of-war genome reveals the genetic basis of medusa loss and sea–air interface adaptation.</span>
+        <em class="pub-venue">National Science Review</em>,
+        <span class="pub-detail">13(17): nwag374.</span>
+        <a href="https://doi.org/10.1093/nsr/nwag374">DOI</a>
+      </div>
     </li>
     <li class="pub-item">
-      <span class="pub-authors">Cao Y<sup>†</sup>, She J<sup>†</sup>, Li Z<sup>†</sup>, … Su Z.</span>
-      <span class="pub-title">TomAP: a multi-omics data analysis platform for advancing functional genomics research in tomatoes.</span>
-      <em class="pub-venue">New Crops</em>,
-      <span class="pub-detail">1: 100002, 2024.</span>
-      <span class="pub-tag">Co-first author</span>
-      <a href="https://doi.org/10.1016/j.ncrops.2023.10.001">DOI</a>
+      <span class="pub-year-mark">2024</span>
+      <div class="pub-content">
+        <span class="pub-authors">Cao Y<sup>†</sup>, She J<sup>†</sup>, Li Z<sup>†</sup>, … Su Z.</span>
+        <span class="pub-title">TomAP: a multi-omics data analysis platform for advancing functional genomics research in tomatoes.</span>
+        <em class="pub-venue">New Crops</em>,
+        <span class="pub-detail">1: 100002.</span>
+        <span class="pub-tag">Co-first author</span>
+        <a href="https://doi.org/10.1016/j.ncrops.2023.10.001">DOI</a>
+      </div>
     </li>
     <li class="pub-item">
-      <span class="pub-authors">She J, Yan H, Yang J, Xu W, Su Z.</span>
-      <span class="pub-title">croFGD: <em>Catharanthus roseus</em> functional genomics database.</span>
-      <em class="pub-venue">Frontiers in Genetics</em>,
-      <span class="pub-detail">10: 238, 2019.</span>
-      <span class="pub-tag">First author</span>
-      <a href="https://doi.org/10.3389/fgene.2019.00238">DOI</a>
+      <span class="pub-year-mark">2019</span>
+      <div class="pub-content">
+        <span class="pub-authors">She J, Yan H, Yang J, Xu W, Su Z.</span>
+        <span class="pub-title">croFGD: <em>Catharanthus roseus</em> functional genomics database.</span>
+        <em class="pub-venue">Frontiers in Genetics</em>,
+        <span class="pub-detail">10: 238.</span>
+        <span class="pub-tag">First author</span>
+        <a href="https://doi.org/10.3389/fgene.2019.00238">DOI</a>
+      </div>
     </li>
     <li class="pub-item">
-      <span class="pub-authors">She J, Su D, Diao R, Wang L.</span>
-      <span class="pub-title">A joint model of random forest and artificial neural network for the diagnosis of endometriosis.</span>
-      <em class="pub-venue">Frontiers in Genetics</em>,
-      <span class="pub-detail">13: 848116, 2022.</span>
-      <span class="pub-tag">First author</span>
-      <a href="https://doi.org/10.3389/fgene.2022.848116">DOI</a>
+      <span class="pub-year-mark">2022</span>
+      <div class="pub-content">
+        <span class="pub-authors">She J, Su D, Diao R, Wang L.</span>
+        <span class="pub-title">A joint model of random forest and artificial neural network for the diagnosis of endometriosis.</span>
+        <em class="pub-venue">Frontiers in Genetics</em>,
+        <span class="pub-detail">13: 848116.</span>
+        <span class="pub-tag">First author</span>
+        <a href="https://doi.org/10.3389/fgene.2022.848116">DOI</a>
+      </div>
     </li>
     <li class="pub-item">
-      <span class="pub-authors">She J, Tan K, Liu J, … Diao R, Wang L.</span>
-      <span class="pub-title">The alteration of m<sup>6</sup>A modification at the transcriptome-wide level in human villi during spontaneous abortion in the first trimester.</span>
-      <em class="pub-venue">Frontiers in Genetics</em>,
-      <span class="pub-detail">13: 861853, 2022.</span>
-      <span class="pub-tag">First author</span>
-      <a href="https://doi.org/10.3389/fgene.2022.861853">DOI</a>
+      <span class="pub-year-mark">2022</span>
+      <div class="pub-content">
+        <span class="pub-authors">She J, Tan K, Liu J, … Diao R, Wang L.</span>
+        <span class="pub-title">The alteration of m<sup>6</sup>A modification at the transcriptome-wide level in human villi during spontaneous abortion in the first trimester.</span>
+        <em class="pub-venue">Frontiers in Genetics</em>,
+        <span class="pub-detail">13: 861853.</span>
+        <span class="pub-tag">First author</span>
+        <a href="https://doi.org/10.3389/fgene.2022.861853">DOI</a>
+      </div>
     </li>
   </ol>
-  <p class="small">
-    <a href="{{ '/publications.html' | relative_url }}">Full publication list (21 papers and preprints) →</a>
+  <p class="more-link">
+    <a href="{{ '/publications.html' | relative_url }}">Full publication list <span>21 papers and preprints</span> →</a>
   </p>
 </section>
 
@@ -167,3 +243,5 @@ layout: home
     </li>
   </ul>
 </section>
+
+</div>

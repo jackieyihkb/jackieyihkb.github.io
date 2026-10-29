@@ -6,7 +6,7 @@
 
   {%- assign page_title = page.title | default: site.title -%}
   {%- if page.url == '/' -%}
-    {%- assign full_title = site.title | append: ' — Bioinformatics & Deep-Sea Genomics' -%}
+    {%- assign full_title = site.title | append: ' — Bioinformatics &amp; Deep-Sea Genomics' -%}
   {%- else -%}
     {%- assign full_title = page_title | append: ' · ' | append: site.title -%}
   {%- endif -%}
@@ -23,7 +23,7 @@
   <meta property="og:url" content="{{ page.url | absolute_url }}">
   <meta property="og:image" content="{{ '/assets/images/social-card.png' | absolute_url }}">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="theme-color" content="#fbfaf7">
+  <meta name="theme-color" content="#082635">
 
   <link rel="icon" href="{{ '/assets/images/favicon.svg' | relative_url }}" type="image/svg+xml">
   <link rel="icon" href="{{ '/assets/images/favicon-32.png' | relative_url }}" sizes="32x32" type="image/png">
@@ -53,7 +53,7 @@
   </script>
 </head>
 
-<body>
+<body{% if page.url == '/' %} class="home"{% endif %}>
   <a class="skip-link" href="#main">Skip to content</a>
 
   <header class="site-header">
@@ -67,7 +67,7 @@
     </div>
   </header>
 
-  <main id="main" class="wrap">
+  <main id="main"{% unless page.url == '/' %} class="wrap"{% endunless %}>
     {{ content }}
   </main>
 

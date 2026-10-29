@@ -6,11 +6,13 @@ lead: >-
 ---
 
 <div class="pub-metrics">
-  <span><strong>Google Scholar</strong> · October 2026</span>
-  <span><strong>596</strong> citations</span>
-  <span><strong>h-index 11</strong></span>
-  <span><strong>i10-index 11</strong></span>
-  <span><a href="https://scholar.google.com.hk/citations?user=I4Rl5BMAAAAJ">Profile ↗</a></span>
+  <div class="metric"><strong>596</strong><span>citations</span></div>
+  <div class="metric"><strong>11</strong><span>h-index</span></div>
+  <div class="metric"><strong>11</strong><span>i10-index</span></div>
+  <div class="metric"><strong>21</strong><span>papers &amp; preprints</span></div>
+  <p class="metric-source">
+    <a href="https://scholar.google.com.hk/citations?user=I4Rl5BMAAAAJ">Google Scholar, October 2026 ↗</a>
+  </p>
 </div>
 
 <h2 class="pub-year">2026</h2>
