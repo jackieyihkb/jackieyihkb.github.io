@@ -20,18 +20,18 @@ Two principles shape how I teach:
 
 ## Courses
 
-Course pages for the 2026–2027 academic year are being prepared. For the current
-syllabus, lecture slides or assignment details, please
+<h3 class="course-title">生物信息学基础实训</h3>
+
+<p class="course-meta"><em>Bioinformatics Practical Training</em>, undergraduate practical course, <span class="nowrap">2026–2027</span></p>
+
+Students collect their own saliva samples and follow the question from sample to
+interpretation: DNA preparation, the laboratory assay and the bioinformatics
+analysis of alcohol-metabolism variants. Because each student is answering a
+question about themselves, every wet-lab step and every command has a concrete
+purpose.
+
+For the current syllabus, lecture slides or assignment details, please
 [email me](mailto:jiajie@szpu.edu.cn).
-
-## Tutorials and training material
-
-- [Tree visualisation](https://github.com/songweizhi/BioSAK/tree/master/BioSAK_tutorial/Demo_tree_visualization_with_iTol):
-  drawing and annotating phylogenetic trees with iTOL.
-- [Functional annotation](https://github.com/songweizhi/BioSAK/tree/master/BioSAK_tutorial/Demo_functional_annotation):
-  assigning function to predicted genes.
-- [Tax4Fun2](https://github.com/songweizhi/Tax4Fun2_short_tutorial): functional
-  prediction from 16S data.
 
 ## For prospective students
 

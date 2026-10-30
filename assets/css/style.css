@@ -856,6 +856,28 @@ main {
   color: var(--ink);
 }
 
+/* Course titles are Chinese, so name the CJK serif faces explicitly
+   instead of relying on a browser fallback that varies by platform. */
+.prose > h3.course-title {
+  font-family: "Songti SC", "Noto Serif CJK SC", "Source Han Serif SC",
+    "SimSun", var(--serif);
+  font-size: 1.18rem;
+  letter-spacing: 0.01em;
+}
+
+.prose > p.course-meta {
+  margin: 0 0 0.95rem;
+  text-align: start;
+  -webkit-hyphens: none;
+  hyphens: none;
+  font-size: 0.93rem;
+  color: var(--muted);
+}
+
+.prose .nowrap {
+  white-space: nowrap;
+}
+
 .prose > p:not([class]) {
   margin: 0 0 1rem;
 }
