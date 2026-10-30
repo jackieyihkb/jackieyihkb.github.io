@@ -6,25 +6,25 @@ lead: >-
 ---
 
 My work is organised around a single practical question: how do we make
-heterogeneous sequencing data useful to people who did not generate them? That
-question has taken me from deep-sea animals to crop and medicinal plants, and
-from plant immunity to human reproductive disease. In each case the output is
-the same kind of object: a curated, searchable resource with the analysis tools
-built in.
+<mark>heterogeneous sequencing data</mark> useful to people who did not generate
+them? That question has taken me from deep-sea animals to crop and medicinal
+plants, and from plant immunity to human reproductive disease. In each case the
+output is the same kind of object: a <strong>curated, searchable resource</strong>
+with the analysis tools built in.
 
 ## Deep-ocean genomics and adaptation
 
 The deep ocean is the largest and least explored habitat on Earth. Organisms
-there have evolved under high pressure, permanent darkness and severe nutrient
-limitation, and their genomes carry the record of those adaptations. Until
-recently, however, deep-sea omics data were scattered across supplementary
-tables and one-off repositories.
+there have evolved under <strong>high pressure, permanent darkness and severe
+nutrient limitation</strong>, and their genomes carry the record of those
+adaptations. Until recently, however, deep-sea omics data were scattered across
+supplementary tables and one-off repositories.
 
 With Prof. Pei-Yuan Qian and Prof. Longjun Wu, I built **DOO (Deep Ocean
 Omics)**, a centralised multi-omics atlas for deep-ocean organisms. DOO
-integrates 68 species across seven phyla: 72 genomes, 950 bulk transcriptomes,
-15 single-cell transcriptomes and 1,112 metagenomes, together with comparative
-and functional analysis toolkits. For each genome it exposes assembly
+integrates <strong>68 species across seven phyla</strong>: 72 genomes, 950 bulk
+transcriptomes, 15 single-cell transcriptomes and 1,112 metagenomes, together
+with comparative and functional analysis toolkits. For each genome it exposes assembly
 statistics, phylogeny, gene annotation, BUSCO completeness, transcription
 factors, gene clusters, symbiont and mitochondrial genomes, and fossil records.
 The resource was published as a first-author paper in the *Nucleic Acids
@@ -70,13 +70,13 @@ that period are still online and still used.
 In parallel, I have worked on the molecular basis of reproductive disorders,
 where the same data-integration problem appears in a clinical setting.
 
-We mapped the transcriptome-wide m<sup>6</sup>A profile of human villi in first-trimester
-spontaneous abortion using MeRIP-seq and RNA-seq, and followed up candidate
-genes through *IGFBP3* and C/EBPβ, a marker of endometrial receptivity
-([She et al., 2022](https://doi.org/10.3389/fgene.2022.861853)). In
+We mapped the <strong>transcriptome-wide m<sup>6</sup>A profile</strong> of
+human villi in first-trimester spontaneous abortion using MeRIP-seq and RNA-seq,
+and followed up candidate genes through *IGFBP3* and C/EBPβ, a marker of
+endometrial receptivity ([She et al., 2022](https://doi.org/10.3389/fgene.2022.861853)). In
 endometriosis, we combined a random forest with an artificial neural network to
-identify seven differentially expressed genes with diagnostic signal, and
-validated the model on public datasets
+identify <strong>seven differentially expressed genes with diagnostic
+signal</strong>, and validated the model on public datasets
 ([She et al., 2022](https://doi.org/10.3389/fgene.2022.848116)). Related work
 includes prognostic lncRNA models for endometrial cancer and the role of FKBP38
 in premature ovarian insufficiency through mTOR signalling.
@@ -85,7 +85,7 @@ in premature ovarian insufficiency through mTOR signalling.
 
 A paper describes a result once; a database keeps answering questions for years.
 I build resources so that a biologist with no programming background can get an
-answer without emailing me first. In practice this means reproducible pipelines,
-documented interfaces, stable identifiers and versioned releases. It is the
-unglamorous half of the work, and the half that determines whether a resource is
-still useful five years later.
+answer without emailing me first. In practice this means <strong>reproducible
+pipelines, documented interfaces, stable identifiers and versioned
+releases</strong>. It is the unglamorous half of the work, and the half that
+determines whether a resource is still useful five years later.

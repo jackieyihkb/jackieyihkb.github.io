@@ -4,62 +4,66 @@ layout: home
 
 <section class="home-hero">
   <div class="wrap">
-    <div class="home-intro">
-  <div class="intro-text">
-    <p class="kicker">Bioinformatics · Deep-sea genomics · Multi-omics databases</p>
-    <h1>Jiajie She <span class="name-cn">佘加杰</span></h1>
+    <div class="hero-head">
+      <figure class="portrait">
+        <img src="{{ '/assets/images/about-photo.jpg' | relative_url }}"
+             alt="Portrait of Jiajie She">
+      </figure>
 
-    <p class="intro-role">
-      <strong>Lecturer</strong>, School of Food and Drug<br>
-      Shenzhen Polytechnic University · Shenzhen, China
-    </p>
+      <div class="hero-identity">
+        <p class="kicker">Bioinformatics · Deep-sea genomics · Multi-omics databases</p>
+        <h1>Jiajie She <span class="name-cn">佘加杰</span></h1>
+        <p class="intro-role">
+          <strong>Lecturer</strong>, School of Food and Drug<br>
+          Shenzhen Polytechnic University · Shenzhen, China
+        </p>
+      </div>
+    </div>
 
-    <p class="bio-lead">
-      I am a bioinformatician working at the intersection of comparative
-      genomics, deep-sea biology and database engineering. I build multi-omics
-      resources that turn difficult genomes into tools other people can use.
-    </p>
+    <div class="hero-body">
+      <p class="bio-lead">
+        I am a <mark>bioinformatician</mark> working at the intersection of
+        comparative genomics, <mark>deep-sea biology</mark> and database
+        engineering. I build <strong>multi-omics resources</strong> that turn
+        difficult genomes into tools other people can use.
+      </p>
 
-    <p>
-      My research spans deep-ocean genomics and adaptation, the functional
-      genomics of crop and medicinal plants, and epitranscriptomics in
-      reproductive disease. The common problem across these areas is
-      heterogeneous sequencing data: scattered, unevenly annotated and hard to
-      query. A large part of my work goes into making such data searchable,
-      comparable and reproducible.
-    </p>
+      <p>
+        My research spans <strong>deep-ocean genomics and adaptation</strong>,
+        the <strong>functional genomics of crop and medicinal plants</strong>,
+        and <strong>epitranscriptomics in reproductive disease</strong>. The
+        common problem across these areas is
+        <mark>heterogeneous sequencing data</mark>: scattered, unevenly annotated
+        and hard to query. A large part of my work goes into making such data
+        <strong>searchable, comparable and reproducible</strong>.
+      </p>
 
-    <p>
-      I was previously a joint postdoctoral fellow at the Hong Kong University
-      of Science and Technology and the Guangzhou Marine Laboratory, and before
-      that a postdoctoral researcher at the Reproductive Medicine Centre of
-      Shenzhen Second People's Hospital. I received my PhD in Bioinformatics
-      from China Agricultural University in 2020. My work has appeared in
-      <em>Nucleic Acids Research</em>, <em>National Science Review</em>,
-      <em>Molecular Plant</em> and <em>The Plant Cell</em>.
-    </p>
+      <p>
+        I was previously a joint postdoctoral fellow at the Hong Kong University
+        of Science and Technology and the Guangzhou Marine Laboratory, and
+        before that a postdoctoral researcher at the Reproductive Medicine
+        Centre of Shenzhen Second People's Hospital. I received my
+        <mark>PhD in Bioinformatics</mark> from China Agricultural University in
+        2020. My work has appeared in <em>Nucleic Acids Research</em>,
+        <em>National Science Review</em>, <em>Molecular Plant</em> and
+        <em>The Plant Cell</em>.
+      </p>
 
-    <ul class="intro-links">
-      <li><a href="mailto:jiajie@szpu.edu.cn">Email</a></li>
-      <li><a href="https://scholar.google.com.hk/citations?user=I4Rl5BMAAAAJ">Google Scholar</a></li>
-      <li><a href="https://orcid.org/0000-0003-4286-6411">ORCID</a></li>
-      <li><a href="https://github.com/jackieyihkb">GitHub</a></li>
-      <li><a href="https://www.researchgate.net/profile/Jiajie-She">ResearchGate</a></li>
-    </ul>
+      <ul class="intro-links">
+        <li><a href="mailto:jiajie@szpu.edu.cn">Email</a></li>
+        <li><a href="https://scholar.google.com.hk/citations?user=I4Rl5BMAAAAJ">Google Scholar</a></li>
+        <li><a href="https://orcid.org/0000-0003-4286-6411">ORCID</a></li>
+        <li><a href="https://github.com/jackieyihkb">GitHub</a></li>
+        <li><a href="https://www.researchgate.net/profile/Jiajie-She">ResearchGate</a></li>
+      </ul>
 
-    <ul class="intro-stats" aria-label="Research metrics">
-      <li><strong>21</strong><span>papers &amp; preprints</span></li>
-      <li><strong>596</strong><span>citations</span></li>
-      <li><strong>11</strong><span>h-index</span></li>
-      <li><strong>3</strong><span>core databases</span></li>
-    </ul>
-    <p class="stats-note">Google Scholar, October 2026</p>
-  </div>
-
-  <figure class="portrait">
-    <img src="{{ '/assets/images/about-photo.jpg' | relative_url }}"
-         alt="Portrait of Jiajie She">
-  </figure>
+      <ul class="intro-stats" aria-label="Research metrics">
+        <li><strong>21</strong><span>papers &amp; preprints</span></li>
+        <li><strong>596</strong><span>citations</span></li>
+        <li><strong>11</strong><span>h-index</span></li>
+        <li><strong>3</strong><span>core databases</span></li>
+      </ul>
+      <p class="stats-note">Google Scholar, October 2026</p>
     </div>
   </div>
 </section>
