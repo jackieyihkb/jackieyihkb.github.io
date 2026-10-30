@@ -5,6 +5,8 @@ main:
     url: /publications.html
   - title: Databases
     url: /platform.html
+  - title: Projects
+    url: /projects.html
   - title: Teaching
     url: /teaching.html
   - title: Gallery

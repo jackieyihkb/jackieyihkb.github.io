@@ -755,6 +755,23 @@ main {
   color: var(--muted);
 }
 
+.prose > h2.project-group {
+  margin: 2.4rem 0 0.85rem;
+  padding-top: 0;
+  border-top: 0;
+  font-family: var(--sans);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  line-height: 1.5;
+  text-transform: uppercase;
+  color: var(--accent-warm);
+}
+
+.prose > h2.project-group:first-child {
+  margin-top: 0;
+}
+
 /* --- Inner page header ---------------------------------------------------- */
 
 .page-header {

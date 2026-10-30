@@ -198,6 +198,36 @@ layout: home
 </section>
 
 <section class="section">
+  <h2 class="section-title">Projects</h2>
+  <ul class="cv-list">
+    <li class="cv-item">
+      <span class="cv-when">2027 – 2029</span>
+      <span>
+        <strong>RNA modification dynamics and adaptation in deep-sea mussels</strong>
+        <span class="cv-note">NSFC Young Scientists Fund (C) · 4260061478 · PI</span>
+      </span>
+    </li>
+    <li class="cv-item">
+      <span class="cv-when">2022 – 2025</span>
+      <span>
+        <strong>m<sup>6</sup>A methylation in early spontaneous abortion</strong>
+        <span class="cv-note">Shenzhen Basic Research General Project · JCYJ20220530151207016 · PI</span>
+      </span>
+    </li>
+    <li class="cv-item">
+      <span class="cv-when">2024 –</span>
+      <span>
+        <strong>Convergent evolution of deep-sea animals</strong>
+        <span class="cv-note">Comparative genomics of more than 200 species</span>
+      </span>
+    </li>
+  </ul>
+  <p class="more-link">
+    <a href="{{ '/projects.html' | relative_url }}">All projects <span>funding and current research</span> →</a>
+  </p>
+</section>
+
+<section class="section">
   <h2 class="section-title">News</h2>
   <ul class="news-list">
     <li class="news-item">

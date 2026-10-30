@@ -5,11 +5,12 @@ lead: Two granted patents and two registered software copyrights.
 
 ## Patents
 
+- Diao R, Mou L, **She J**, Wang L. **Use of 2-aminoethyl diphenylborinate
+  (2-APB) in the preparation of a medicament for treating leukocytospermia.**
+  Chinese invention patent ZL 202310029588.2, 2023.
 - Diao R, Mou L, **She J**, Wang L. **A chip and device for screening sperm
-  without anti-sperm antibodies.** Patent No. 202320410124.1.
-- Diao R, Mou L, **She J**, Wang L. **Effects of 2-APB on the responsiveness of
-  human sperm to progesterone under high H₂O₂ concentration.** Patent No.
-  202310029588.2.
+  without anti-sperm antibodies.** Chinese utility model patent No.
+  202320410124.1, 2023.
 
 ## Software copyright
 
