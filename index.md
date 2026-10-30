@@ -15,7 +15,7 @@ layout: home
         <h1>Jiajie She <span class="name-cn">佘加杰</span></h1>
         <p class="intro-role">
           <strong>Lecturer</strong>, School of Food and Drug<br>
-          Shenzhen Polytechnic University · Shenzhen, China
+          Shenzhen Polytechnic University, Shenzhen, China
         </p>
       </div>
     </div>

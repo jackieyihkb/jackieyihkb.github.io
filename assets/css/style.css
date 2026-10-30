@@ -110,6 +110,27 @@ img {
   height: auto;
 }
 
+/* Justify running prose, not interface labels such as the kicker,
+   byline or footer links. */
+.page-lead,
+.prose p,
+.prose > ul:not([class]) > li,
+.prose > ol:not([class]) > li,
+.hero-body p,
+.interests p,
+.news-item > span:last-child,
+.cv-note,
+.pub-entry,
+.contact-item span:last-child {
+  text-align: justify;
+  text-justify: inter-word;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+  -webkit-hyphenate-limit-before: 4;
+  -webkit-hyphenate-limit-after: 3;
+  hyphenate-limit-chars: 6 4 3;
+}
+
 .skip-link {
   position: absolute;
   left: -9999px;
@@ -244,7 +265,7 @@ main {
 
 .hero-head {
   display: grid;
-  grid-template-columns: 13rem minmax(0, 1fr);
+  grid-template-columns: 17rem minmax(0, 1fr);
   gap: 3.2rem;
   align-items: center;
 }
@@ -1137,6 +1158,7 @@ main {
   font-family: var(--sans);
   font-size: 0.64rem;
   letter-spacing: 0.08em;
+  text-align: start;
   text-transform: uppercase;
   color: var(--muted);
 }
@@ -1364,6 +1386,13 @@ main {
 }
 
 /* --- Responsive ----------------------------------------------------------- */
+
+@media (max-width: 900px) {
+  .hero-head {
+    grid-template-columns: 13rem minmax(0, 1fr);
+    gap: 2.4rem;
+  }
+}
 
 @media (max-width: 720px) {
   html {
