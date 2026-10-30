@@ -85,5 +85,9 @@
       </p>
     </div>
   </footer>
+
+  {%- if page.layout == "album" %}
+  <script src="{{ '/assets/js/gallery.js' | relative_url }}" defer></script>
+  {%- endif %}
 </body>
 </html>

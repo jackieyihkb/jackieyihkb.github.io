@@ -1,44 +1,71 @@
 ---
 title: Gallery
-lead: Lab life during my postdoc, fieldwork, and a few trips in between.
+lead: >-
+  Photographs from the lab, conferences, fieldwork and the people in between —
+  arranged by period and event.
 ---
 
-Photographs from the Department of Ocean Science at HKUST and from fieldwork and
-travel between 2024 and 2026. Click any image to open it full size.
-
 {%- assign exts = ".jpg,.jpeg,.png,.webp,.gif" -%}
-{%- assign lab_n = 0 -%}
-{%- assign own_n = 0 -%}
-{%- for f in site.static_files -%}
-  {%- unless f.path contains "/thumbs/" -%}
-    {%- assign e = f.extname | downcase -%}
-    {%- if exts contains e and f.path contains "/assets/photos/" -%}
-      {%- if f.path contains "/assets/photos/lab/" -%}
-        {%- assign lab_n = lab_n | plus: 1 -%}
-      {%- else -%}
-        {%- assign own_n = own_n | plus: 1 -%}
-      {%- endif -%}
-    {%- endif -%}
-  {%- endunless -%}
-{%- endfor -%}
+{%- assign albums = site.albums | sort: "order" -%}
+{%- assign era_groups = albums | group_by: "era" -%}
 
-{% if lab_n > 0 %}
-## Lab life
+{% if albums.size > 0 %}
+{%- if era_groups.size > 1 %}
+<nav class="era-nav" aria-label="Photo archive by period">
+  {%- for group in era_groups -%}
+    {%- assign era = site.data.gallery.eras | where: "key", group.name | first %}
+  <a href="#era-{{ group.name | slugify }}">{{ group.name }}{% if era %} · {{ era.name }}{% endif %}</a>
+  {%- endfor %}
+</nav>
+{%- endif %}
 
-WU LAB, Department of Ocean Science, HKUST — {{ lab_n }} photographs from
-2024–2026.
+{% for group in era_groups -%}
+  {%- assign era = site.data.gallery.eras | where: "key", group.name | first %}
+<section class="era" id="era-{{ group.name | slugify }}">
+  <header class="era-head">
+    <p class="era-years">{{ group.name }}</p>
+    <div class="era-intro">
+      {%- if era %}
+      <h2>{{ era.name }}</h2>
+      {%- if era.subtitle %}<p class="era-subtitle">{{ era.subtitle }}</p>{% endif %}
+      {%- if era.blurb %}<p class="era-blurb">{{ era.blurb }}</p>{% endif %}
+      {%- endif %}
+    </div>
+  </header>
 
-{% include photo_grid.html section="lab" %}
-{% endif %}
+  <div class="album-grid">
+    {%- for album in group.items -%}
+      {%- assign count = 0 -%}
+      {%- for f in site.static_files -%}
+        {%- assign e = f.extname | downcase -%}
+        {%- if e == ".jpg" or e == ".jpeg" or e == ".png" or e == ".webp" or e == ".gif" -%}
+          {%- if f.path contains album.folder -%}
+            {%- unless f.path contains "/thumbs/" -%}
+              {%- assign count = count | plus: 1 -%}
+            {%- endunless -%}
+          {%- endif -%}
+        {%- endif -%}
+      {%- endfor %}
+    <a class="album-card" href="{{ album.url | relative_url }}">
+      <figure class="album-cover">
+        <img src="{{ album.cover | relative_url }}"
+             alt="{{ album.title }} — album cover"
+             loading="lazy" decoding="async">
+      </figure>
+      <div class="album-body">
+        <p class="album-meta">
+          <span>{{ album.period }}</span>
+          <span>{{ count }} photographs</span>
+        </p>
+        <h3>{{ album.title }}</h3>
+        <p>{{ album.description }}</p>
+      </div>
+    </a>
+    {%- endfor %}
+  </div>
+</section>
+{% endfor %}
 
-{% if own_n > 0 %}
-## Trips and fieldwork
-
-{{ own_n }} photographs.
-
-{% include photo_grid.html section="own" %}
-{% endif %}
-
-{% if lab_n == 0 and own_n == 0 %}
+{% else %}
 <p class="note">No photographs have been added yet.</p>
 {% endif %}

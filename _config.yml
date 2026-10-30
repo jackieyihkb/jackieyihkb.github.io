@@ -21,6 +21,11 @@ markdown: kramdown
 plugins:
   - jekyll-sitemap
 
+collections:
+  albums:
+    output: true
+    permalink: /gallery/:name/
+
 exclude:
   - README.md
   - Gemfile
@@ -49,3 +54,8 @@ defaults:
       type: pages
     values:
       layout: page
+  - scope:
+      path: ''
+      type: albums
+    values:
+      layout: album

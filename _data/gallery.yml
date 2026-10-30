@@ -1,0 +1,9 @@
+# Gallery eras, keyed to the `era` field in _albums/*.md.
+# Add a new era here when the first album for that period is created.
+eras:
+  - key: "2024–2026"
+    name: Hong Kong
+    subtitle: Joint postdoctoral fellow · HKUST and Guangzhou Marine Laboratory
+    blurb: >-
+      Lab dinners, conference trips, hikes and harbour light between
+      experiments.

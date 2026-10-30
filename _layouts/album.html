@@ -1,0 +1,29 @@
+---
+layout: default
+---
+{%- assign photo_count = 0 -%}
+{%- for f in site.static_files -%}
+  {%- assign e = f.extname | downcase -%}
+  {%- if e == ".jpg" or e == ".jpeg" or e == ".png" or e == ".webp" or e == ".gif" -%}
+    {%- if f.path contains page.folder -%}
+      {%- unless f.path contains "/thumbs/" -%}
+        {%- assign photo_count = photo_count | plus: 1 -%}
+      {%- endunless -%}
+    {%- endif -%}
+  {%- endif -%}
+{%- endfor -%}
+
+<article class="album-page">
+  <header class="page-header album-header">
+    <p class="album-back">
+      <a href="{{ '/photos.html' | relative_url }}#era-{{ page.era | slugify }}">Gallery / {{ page.era }}</a>
+    </p>
+    <h1>{{ page.title }}</h1>
+    <p class="page-lead">{{ page.description }}</p>
+    <p class="album-facts">
+      {{ photo_count }} photographs{% if page.place %} · {{ page.place }}{% endif %}
+    </p>
+  </header>
+
+  {% include album_photos.html folder=page.folder title=page.title place=page.place %}
+</article>
