@@ -11,7 +11,7 @@ layout: home
       </figure>
 
       <div class="hero-identity">
-        <p class="kicker">Bioinformatics · Deep-sea genomics · Multi-omics databases</p>
+        <p class="kicker">Bioinformatics · Deep-sea genomics and&nbsp;adaptation · Epitranscriptomics</p>
         <h1>Jiajie She <span class="name-cn">佘加杰</span></h1>
         <p class="intro-role">
           <strong>Lecturer</strong>, School of Food and Drug<br>
@@ -22,8 +22,8 @@ layout: home
 
     <div class="hero-body">
       <p class="bio-lead">
-        I am a <mark>bioinformatician</mark> working at the intersection of
-        comparative genomics, <mark>deep-sea biology</mark> and database
+        I am a <strong>bioinformatician</strong> working at the intersection of
+        comparative genomics, <strong>deep-sea biology</strong> and database
         engineering. I build <strong>multi-omics resources</strong> that turn
         difficult genomes into tools other people can use.
       </p>
@@ -33,8 +33,8 @@ layout: home
         the <strong>functional genomics of crop and medicinal plants</strong>,
         and <strong>epitranscriptomics in reproductive disease</strong>. The
         common problem across these areas is
-        <mark>heterogeneous sequencing data</mark>: scattered, unevenly annotated
-        and hard to query. A large part of my work goes into making such data
+        <strong>heterogeneous sequencing data</strong>: scattered, unevenly
+        annotated and hard to query. A large part of my work goes into making such data
         <strong>searchable, comparable and reproducible</strong>.
       </p>
 
@@ -43,8 +43,8 @@ layout: home
         of Science and Technology and the Guangzhou Marine Laboratory, and
         before that a postdoctoral researcher at the Reproductive Medicine
         Centre of Shenzhen Second People's Hospital. I received my
-        <mark>PhD in Bioinformatics</mark> from China Agricultural University in
-        2020. My work has appeared in <em>Nucleic Acids Research</em>,
+        <strong>PhD in Bioinformatics</strong> from China Agricultural University
+        in 2020. My work has appeared in <em>Nucleic Acids Research</em>,
         <em>National Science Review</em>, <em>Molecular Plant</em> and
         <em>The Plant Cell</em>.
       </p>

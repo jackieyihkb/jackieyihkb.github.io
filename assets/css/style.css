@@ -40,7 +40,6 @@
   --accent-dark: #082635;
   --accent-warm: #9c4729;
   --accent-warm-soft: #f0dcd0;
-  --accent-light: #e6a98c;
   --hero-bg: #dde8e3;
   --hero-bg-deep: #cfded8;
   --footer-bg: #e5ebe5;
@@ -78,17 +77,6 @@ body {
 ::selection {
   background: var(--accent-warm-soft);
   color: var(--ink);
-}
-
-mark {
-  padding: 0 0.06em;
-  background-color: transparent;
-  background-image: linear-gradient(
-    180deg,
-    transparent 50%,
-    rgba(230, 169, 140, 0.6) 50%
-  );
-  color: inherit;
 }
 
 .wrap {
@@ -294,11 +282,10 @@ main {
 .kicker {
   margin: 0 0 0.7rem;
   font-family: var(--sans);
-  font-size: 0.64rem;
+  font-size: 0.68rem;
   font-weight: 600;
-  letter-spacing: 0.17em;
-  line-height: 1.55;
-  text-transform: uppercase;
+  letter-spacing: 0.09em;
+  line-height: 1.6;
   color: var(--accent-warm);
 }
 
@@ -871,7 +858,7 @@ main {
 
 .prose strong {
   font-weight: 600;
-  color: var(--accent);
+  color: var(--ink);
 }
 
 .prose sup {
@@ -1422,8 +1409,8 @@ main {
 
   .kicker {
     margin-bottom: 0.55rem;
-    font-size: 0.55rem;
-    letter-spacing: 0.13em;
+    font-size: 0.6rem;
+    letter-spacing: 0.07em;
   }
 
   .intro-role {
@@ -1559,7 +1546,7 @@ main {
   }
 
   .kicker {
-    font-size: 0.51rem;
+    font-size: 0.55rem;
   }
 
   .intro-role {
@@ -1613,10 +1600,6 @@ main {
   .intro-role strong,
   .intro-stats strong {
     color: #000;
-  }
-
-  mark {
-    background: none;
   }
 
   .kicker,

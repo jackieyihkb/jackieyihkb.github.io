@@ -6,8 +6,8 @@ lead: >-
 ---
 
 My work is organised around a single practical question: how do we make
-<mark>heterogeneous sequencing data</mark> useful to people who did not generate
-them? That question has taken me from deep-sea animals to crop and medicinal
+<strong>heterogeneous sequencing data</strong> useful to people who did not
+generate them? That question has taken me from deep-sea animals to crop and medicinal
 plants, and from plant immunity to human reproductive disease. In each case the
 output is the same kind of object: a <strong>curated, searchable resource</strong>
 with the analysis tools built in.
