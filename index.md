@@ -148,6 +148,28 @@ layout: home
       </div>
     </li>
     <li class="pub-item">
+      <span class="pub-year-mark">2026</span>
+      <div class="pub-content">
+        <span class="pub-authors">She J, Jiang C, Fan J, Qian P-Y, Wu L.</span>
+        <span class="pub-title">CnidoSite: a multi-omics database for cnidarians.</span>
+        <em class="pub-venue">bioRxiv</em>,
+        <span class="pub-detail">preprint.</span>
+        <span class="pub-tag">First author</span>
+        <span class="pub-tag pub-tag--preprint">Preprint</span>
+        <span class="links"><a href="https://doi.org/10.64898/2026.10.15.758670">DOI</a> · <a href="https://cnidosite.org">Database</a></span>
+      </div>
+    </li>
+    <li class="pub-item">
+      <span class="pub-year-mark">2024</span>
+      <div class="pub-content">
+        <span class="pub-authors">Zhang D, Yang X, Wen Z, … She J, … Zhang Y.</span>
+        <span class="pub-title">Proxitome profiling reveals a conserved SGT1-NSL1 signaling module that activates NLR-mediated immunity.</span>
+        <em class="pub-venue">Molecular Plant</em>,
+        <span class="pub-detail">17(9): 1369–1391.</span>
+        <a href="https://doi.org/10.1016/j.molp.2024.07.010">DOI</a>
+      </div>
+    </li>
+    <li class="pub-item">
       <span class="pub-year-mark">2024</span>
       <div class="pub-content">
         <span class="pub-authors">Cao Y<sup>†</sup>, She J<sup>†</sup>, Li Z<sup>†</sup>, … Su Z.</span>
@@ -155,40 +177,38 @@ layout: home
         <em class="pub-venue">New Crops</em>,
         <span class="pub-detail">1: 100002.</span>
         <span class="pub-tag">Co-first author</span>
-        <a href="https://doi.org/10.1016/j.ncrops.2023.10.001">DOI</a>
+        <span class="links"><a href="https://doi.org/10.1016/j.ncrops.2023.10.001">DOI</a> · <a href="http://bioinformatics.cau.edu.cn/TomAP/">Database</a></span>
       </div>
     </li>
     <li class="pub-item">
-      <span class="pub-year-mark">2019</span>
+      <span class="pub-year-mark">2023</span>
       <div class="pub-content">
-        <span class="pub-authors">She J, Yan H, Yang J, Xu W, Su Z.</span>
-        <span class="pub-title">croFGD: <em>Catharanthus roseus</em> functional genomics database.</span>
-        <em class="pub-venue">Frontiers in Genetics</em>,
-        <span class="pub-detail">10: 238.</span>
-        <span class="pub-tag">First author</span>
-        <a href="https://doi.org/10.3389/fgene.2019.00238">DOI</a>
+        <span class="pub-authors">Liu X<sup>†</sup>, Wang H<sup>†</sup>, She J<sup>†</sup>, … Wang L.</span>
+        <span class="pub-title">An anti-fibroblast adhesion and anti-inflammatory hydrogel film combined with VEGF for intrauterine adhesion prevention.</span>
+        <em class="pub-venue">Chemical Engineering Journal</em>,
+        <span class="pub-detail">466: 143144.</span>
+        <span class="pub-tag">Co-first author</span>
+        <a href="https://doi.org/10.1016/j.cej.2023.143144">DOI</a>
       </div>
     </li>
     <li class="pub-item">
-      <span class="pub-year-mark">2022</span>
+      <span class="pub-year-mark">2023</span>
       <div class="pub-content">
-        <span class="pub-authors">She J, Su D, Diao R, Wang L.</span>
-        <span class="pub-title">A joint model of random forest and artificial neural network for the diagnosis of endometriosis.</span>
-        <em class="pub-venue">Frontiers in Genetics</em>,
-        <span class="pub-detail">13: 848116.</span>
-        <span class="pub-tag">First author</span>
-        <a href="https://doi.org/10.3389/fgene.2022.848116">DOI</a>
+        <span class="pub-authors">Zhang Q, Wen Z, Zhang X, She J, … Zhang Y.</span>
+        <span class="pub-title">RETICULON-LIKE PROTEIN B2 is a proviral factor co-opted for the biogenesis of viral replication organelles in plants.</span>
+        <em class="pub-venue">The Plant Cell</em>,
+        <span class="pub-detail">35(8): 3127–3151.</span>
+        <a href="https://doi.org/10.1093/plcell/koad146">DOI</a>
       </div>
     </li>
     <li class="pub-item">
-      <span class="pub-year-mark">2022</span>
+      <span class="pub-year-mark">2023</span>
       <div class="pub-content">
-        <span class="pub-authors">She J, Tan K, Liu J, … Diao R, Wang L.</span>
-        <span class="pub-title">The alteration of m<sup>6</sup>A modification at the transcriptome-wide level in human villi during spontaneous abortion in the first trimester.</span>
-        <em class="pub-venue">Frontiers in Genetics</em>,
-        <span class="pub-detail">13: 861853.</span>
-        <span class="pub-tag">First author</span>
-        <a href="https://doi.org/10.3389/fgene.2022.861853">DOI</a>
+        <span class="pub-authors">Li Z, Hu Y, Ma X, Da L, She J, … Su Z.</span>
+        <span class="pub-title">WheatCENet: a database for comparative co-expression networks analysis of allohexaploid wheat and its progenitors.</span>
+        <em class="pub-venue">Genomics, Proteomics &amp; Bioinformatics</em>,
+        <span class="pub-detail">21(2): 324–336.</span>
+        <a href="https://doi.org/10.1016/j.gpb.2022.04.007">DOI</a>
       </div>
     </li>
   </ol>
