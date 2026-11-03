@@ -28,21 +28,21 @@
 }
 
 :root {
-  --paper: #f7f2e8;
-  --paper-soft: #ece5d7;
-  --ink: #13232c;
-  --body: #26343a;
-  --muted: #55646a;
-  --faint: #5c696e;
-  --rule: #d9d0c0;
-  --rule-soft: #e7dfd1;
-  --accent: #0d3b4f;
-  --accent-dark: #082635;
-  --accent-warm: #9c4729;
-  --accent-warm-soft: #f0dcd0;
-  --hero-bg: #dde8e3;
-  --hero-bg-deep: #cfded8;
-  --footer-bg: #e5ebe5;
+  --paper: #faf8f3;
+  --paper-soft: #f1ede4;
+  --ink: #1a2f36;
+  --body: #33464c;
+  --muted: #5c6e72;
+  --faint: #5f7074;
+  --rule: #e3ddd1;
+  --rule-soft: #ede8dd;
+  --accent: #2b5866;
+  --accent-dark: #1e434f;
+  --accent-warm: #9a553c;
+  --accent-warm-soft: #f2e1d7;
+  --hero-bg: #e2ece8;
+  --hero-bg-deep: #d4e1dc;
+  --footer-bg: #e9efeb;
   --serif: "Source Serif 4", "Iowan Old Style", "Palatino Linotype", Palatino,
     Georgia, "Times New Roman", serif;
   --sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
@@ -88,7 +88,7 @@ a {
   color: var(--accent);
   text-decoration: underline;
   text-decoration-thickness: 1px;
-  text-decoration-color: #a8b7b4;
+  text-decoration-color: #b3c5c3;
   text-underline-offset: 0.16em;
   transition: color 0.12s ease, text-decoration-color 0.12s ease;
 }
@@ -154,7 +154,7 @@ img {
   position: sticky;
   top: 0;
   z-index: 50;
-  background: rgba(247, 242, 232, 0.96);
+  background: rgba(250, 248, 243, 0.96);
   border-top: 3px solid var(--accent);
   border-bottom: 1px solid var(--rule);
   -webkit-backdrop-filter: blur(10px);
@@ -240,10 +240,10 @@ main {
   padding: 3.7rem 0 3.4rem;
   background-color: var(--hero-bg);
   background-image:
-    radial-gradient(ellipse at 86% 6%, rgba(156, 71, 41, 0.11), transparent 46%),
+    radial-gradient(ellipse at 86% 6%, rgba(154, 85, 60, 0.1), transparent 46%),
     repeating-linear-gradient(
       112deg,
-      rgba(19, 35, 44, 0.035) 0 1px,
+      rgba(26, 47, 54, 0.032) 0 1px,
       transparent 1px 26px
     );
   color: var(--body);
@@ -259,7 +259,7 @@ main {
   background: linear-gradient(
     90deg,
     var(--accent-warm) 0 8rem,
-    rgba(19, 35, 44, 0.12) 8rem 100%
+    rgba(26, 47, 54, 0.11) 8rem 100%
   );
 }
 
@@ -283,7 +283,7 @@ main {
   content: "";
   position: absolute;
   inset: 0.7rem -0.7rem -0.7rem 0.7rem;
-  border: 1px solid rgba(156, 71, 41, 0.48);
+  border: 1px solid rgba(154, 85, 60, 0.42);
 }
 
 .portrait img {
@@ -296,7 +296,7 @@ main {
   object-position: center;
   padding: 6px;
   background: var(--paper);
-  border: 1px solid rgba(19, 35, 44, 0.22);
+  border: 1px solid rgba(26, 47, 54, 0.2);
   filter: saturate(0.92) contrast(1.02);
 }
 
@@ -348,7 +348,7 @@ main {
 .hero-body {
   margin-top: 2.4rem;
   padding-top: 1.8rem;
-  border-top: 1px solid rgba(19, 35, 44, 0.16);
+  border-top: 1px solid rgba(26, 47, 54, 0.15);
 }
 
 .hero-body p {
@@ -384,7 +384,7 @@ main {
 .intro-links a {
   color: var(--accent);
   text-decoration: none;
-  border-bottom: 1px solid rgba(13, 59, 79, 0.28);
+  border-bottom: 1px solid rgba(43, 88, 102, 0.26);
   padding-bottom: 1px;
 }
 
@@ -398,13 +398,13 @@ main {
   grid-template-columns: repeat(4, minmax(0, 1fr));
   margin: 1.7rem 0 0;
   padding: 1.1rem 0 0;
-  border-top: 1px solid rgba(19, 35, 44, 0.16);
+  border-top: 1px solid rgba(26, 47, 54, 0.15);
   list-style: none;
 }
 
 .intro-stats li {
   padding: 0 0.95rem;
-  border-left: 1px solid rgba(19, 35, 44, 0.1);
+  border-left: 1px solid rgba(26, 47, 54, 0.09);
 }
 
 .intro-stats li:first-child {
@@ -498,7 +498,7 @@ main {
 
 .interests li:hover {
   border-top-color: var(--accent-warm);
-  background: #f2ecdf;
+  background: #f4efe6;
 }
 
 .interest-num {
@@ -558,13 +558,13 @@ main {
 
 .home-db-list li:first-child a {
   background: var(--accent-warm-soft);
-  border-color: rgba(156, 71, 41, 0.38);
+  border-color: rgba(154, 85, 60, 0.36);
   box-shadow: inset 0 3px 0 var(--accent-warm);
   color: var(--ink);
 }
 
 .home-db-list li:first-child a:hover {
-  background: #ead3c4;
+  background: #ecd7ca;
   border-color: var(--accent-warm);
 }
 
@@ -677,7 +677,7 @@ main {
   display: inline-block;
   margin-left: 0.15rem;
   padding: 0 0.32rem;
-  border: 1px solid #b9c8c8;
+  border: 1px solid #b6c7c7;
   border-radius: 2px;
   font-family: var(--sans);
   font-size: 0.58rem;
@@ -691,7 +691,7 @@ main {
 }
 
 .pub-tag--preprint {
-  border-color: #d8bfae;
+  border-color: #dcc2b1;
   color: var(--accent-warm);
 }
 
@@ -930,7 +930,7 @@ main {
   margin: 1.6rem 0;
   padding: 0.9rem 1.1rem;
   background: var(--paper-soft);
-  border-left: 2px solid #c9c2b1;
+  border-left: 2px solid #ccc5b6;
   font-size: 0.88rem;
   color: var(--muted);
 }
@@ -978,7 +978,7 @@ main {
 }
 
 .more-link a:hover span {
-  color: rgba(247, 242, 232, 0.68);
+  color: rgba(250, 248, 243, 0.68);
 }
 
 /* --- Publications page ---------------------------------------------------- */
@@ -1118,14 +1118,14 @@ main {
 }
 
 .db-card:hover {
-  border-color: #cfc7b7;
+  border-color: #d6d0c3;
 }
 
 .db-card--feature {
   grid-column: 1 / -1;
   padding: 1.5rem 1.6rem 1.35rem;
   background: var(--hero-bg);
-  border-color: rgba(13, 59, 79, 0.3);
+  border-color: rgba(43, 88, 102, 0.28);
   box-shadow: inset 0 3px 0 var(--accent-warm);
 }
 
@@ -1600,7 +1600,7 @@ main {
   align-items: center;
   justify-content: center;
   padding: 4.5rem 5rem;
-  background: #0a1820;
+  background: #0b1c22;
   color: var(--paper);
 }
 
@@ -1633,7 +1633,7 @@ main {
   font-size: 0.7rem;
   letter-spacing: 0.06em;
   line-height: 1.5;
-  color: rgba(247, 242, 232, 0.72);
+  color: rgba(250, 248, 243, 0.72);
   text-align: center;
 }
 
@@ -1649,7 +1649,7 @@ main {
   font-family: var(--sans);
   font-size: 0.7rem;
   letter-spacing: 0.12em;
-  color: rgba(247, 242, 232, 0.8);
+  color: rgba(250, 248, 243, 0.8);
 }
 
 .lightbox button {
@@ -1659,9 +1659,9 @@ main {
   width: 2.6rem;
   height: 2.6rem;
   padding: 0;
-  border: 1px solid rgba(247, 242, 232, 0.28);
+  border: 1px solid rgba(250, 248, 243, 0.28);
   border-radius: 999px;
-  background: rgba(247, 242, 232, 0.06);
+  background: rgba(250, 248, 243, 0.06);
   color: var(--paper);
   font-family: var(--sans);
   font-size: 1.15rem;
@@ -1671,8 +1671,8 @@ main {
 }
 
 .lightbox button:hover {
-  background: rgba(247, 242, 232, 0.16);
-  border-color: rgba(247, 242, 232, 0.55);
+  background: rgba(250, 248, 243, 0.16);
+  border-color: rgba(250, 248, 243, 0.55);
 }
 
 .lightbox button:focus-visible {
@@ -1854,7 +1854,7 @@ html.lightbox-open body {
 
   .intro-stats li:nth-child(n + 3) {
     padding-top: 0.8rem;
-    border-top: 1px solid rgba(19, 35, 44, 0.1);
+    border-top: 1px solid rgba(26, 47, 54, 0.09);
   }
 
   .intro-stats strong {
